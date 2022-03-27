@@ -1,0 +1,198 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #333;
+}
+
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  height: 40px;
+  background: white;
+}
+@media (min-width: 992px) {
+  header {
+    height: 80px;
+  }
+}
+
+.container {
+  position: fixed;
+  left: 0;
+  top: 40px;
+  width: 100%;
+  height: calc(100% - 40px);
+  background-color: #8b724a;
+}
+@media (min-width: 992px) {
+  .container {
+    top: 80px;
+    height: calc(100% - 80px);
+  }
+}
+.container .map {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+.container .map .city {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  min-width: 1200px;
+  height: 100%;
+  min-height: 800px;
+  background-color: rgba(144, 238, 144, 0.6);
+  -webkit-transition: all 0.8s ease-out;
+  transition: all 0.8s ease-out;
+  overflow: hidden;
+}
+.container .map .city .city-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  width: 100%;
+  height: 100%;
+  background: url(../images/city.png) no-repeat center center;
+  background-size: auto 100%;
+}
+@media (min-width: 992px) {
+  .container .map .city .city-container {
+    width: 120%;
+    height: 120%;
+  }
+}
+.container .map .city .dot {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background: hotpink;
+}
+
+.grid {
+  position: fixed;
+  left: 0;
+  top: 40px;
+  width: 100%;
+  height: calc(100% - 40px);
+  z-index: 100;
+  pointer-events: none;
+}
+@media (min-width: 992px) {
+  .grid {
+    top: 80px;
+    height: calc(100% - 80px);
+  }
+}
+.grid .vertical, .grid .horizontal {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.grid .vertical {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.grid .vertical .line {
+  width: 1px;
+  height: 100%;
+  background: green;
+}
+.grid .horizontal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.grid .horizontal .line {
+  width: 100%;
+  height: 1px;
+  background: green;
+}
