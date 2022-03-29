@@ -118,7 +118,8 @@ header {
   transition: all 0.8s ease-out;
   overflow: hidden;
 }
-.container .map .city .city-container {
+.container .map .city .scale-container {
+  position: relative;
   -webkit-box-flex: 1;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
@@ -128,10 +129,26 @@ header {
   background-size: auto 100%;
 }
 @media (min-width: 992px) {
-  .container .map .city .city-container {
-    width: 120%;
+  .container .map .city .scale-container {
     height: 120%;
   }
+}
+.container .map .city .scale-container .ratio-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: auto;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.container .map .city .scale-container .road {
+  position: absolute;
+  left: 3.4%;
+  top: 11.4%;
+  width: 75.6%;
+  opacity: 0.8;
 }
 .container .map .city .dot {
   position: absolute;

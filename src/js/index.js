@@ -33,6 +33,11 @@ $(function(){
 
     // console.log('width:', windowWidth, 'height:', windowHeight);
     // _city.innerWidth() > windowWidth ? isDrag = true : isDrag = false;
+    let ratioWidth = $('.ratio-container').innerHeight() * 2.15;
+
+    $('.ratio-container').css({
+      'width': ratioWidth
+    });
   
 
     scrollToCenter();

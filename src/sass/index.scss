@@ -49,6 +49,7 @@ header{
       display: flex;
       justify-content: center;
       align-items: center;
+
       width: 100%;
       min-width: 1200px;
       height: 100%;
@@ -57,17 +58,35 @@ header{
       transition: all .8s ease-out;
       overflow: hidden;
     
-      .city-container{
+      // mobile & pc 比例透過高度的百分比來調整
+      .scale-container{
+        position: relative;
         flex: 1 0 auto;
         width: 100%;
         height: 100%;
-        // padding-top: 46%;
         background: url(../images/city.png) no-repeat center center;
         background-size: auto 100%;
 
         @media (min-width: $media_lg) {
-          width: 120%;
           height: 120%;
+        }
+
+        .ratio-container{
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          width: auto; // 用 JS 計算符合高度等比例的寬 2800 / 1302 = 2.15
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.6);
+        }
+
+        .road{
+          position: absolute;
+          left: 3.4%;
+          top: 11.4%;
+          width: 75.6%;
+          opacity: 0.8;
         }
       }
     
