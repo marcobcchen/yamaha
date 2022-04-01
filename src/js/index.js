@@ -24,21 +24,30 @@ $(function(){
     // scrollToCenter();
 
     // _map.stop.scrollTo({top:'50%', left:'50%'}, 800);
+
+    setNav();
   }
   init();
+
+  function setNav(){
+    $('.menu').on('click', function(e){
+      e.preventDefault();
+      $(this).toggleClass('open');
+      $('nav').toggleClass('open');
+    });
+  }
 
   function onResize(){
     windowWidth = $(window).innerWidth();
     windowHeight = $(window).innerHeight();
-
     // console.log('width:', windowWidth, 'height:', windowHeight);
-    // _city.innerWidth() > windowWidth ? isDrag = true : isDrag = false;
+
+    // 2800 / 1302 = 2.15
     let ratioWidth = $('.ratio-container').innerHeight() * 2.15;
 
     $('.ratio-container').css({
       'width': ratioWidth
     });
-  
 
     scrollToCenter();
   }
