@@ -62,18 +62,78 @@ html(lang="zh-tw")
             .text-main 車款車色選擇
             .text-icon 
               img(src="images/nav_icon_change.png", alt="")
-          
-      
-    .container
+             
+    .main
       .map
         .city
           .scale-container 
             .ratio-container
+              //- 道路
               .road 
                 img(src="images/road.png")
+
+              .bike.bike-road-3(data-path="l") 
+                img(src="images/bike_0_0_l.png", alt="")
+              .bike.bike-road-6(data-path="b") 
+                img(src="images/bike_0_0_b.png", alt="")
+              .bike.bike-road-7(data-path="l") 
+                img(src="images/bike_0_0_l.png", alt="")
+              .bike.bike-road-8(data-path="b") 
+                img(src="images/bike_0_0_b.png", alt="")
+
+              //- 中心建築
+              .building-center 
+                img(src="images/building_center.png", alt="")
+
+              .bike.bike-road-1(data-path="t") 
+                img(src="images/bike_0_0_t.png", alt="")
+              .bike.bike-road-2(data-path="r") 
+                img(src="images/bike_0_0_r.png", alt="")
+              .bike.bike-road-4(data-path="r") 
+                img(src="images/bike_0_0_r.png", alt="")
+              .bike.bike-road-5(data-path="l") 
+                img(src="images/bike_0_0_l.png", alt="")
+              .bike.bike-road-9(data-path="t") 
+                img(src="images/bike_0_0_t.png", alt="")
           .dot 
 
-    .grid 
+    .select-bike
+      .select-container 
+        .select-container-head 
+          .title 
+            img(src="images/select_title.png", alt="歡迎來到郝家在社區")
+          .talk
+            .talk-1 
+              img(src="images/select_talk_1.png", alt="歡迎來到郝家在社區！一起陪媽媽創造美好回憶！")
+            .talk-2 
+              img(src="images/select_talk_2.png", alt="參加YAMAHA母親節活動！就有機會讓媽媽把JOG騎回家！")
+        .select-container-step.step-1
+          p 請選擇您的愛車！
+          ul 
+            li 
+              img(src="images/select_bike_1.png", alt="JOG 125")
+            li 
+              img(src="images/select_bike_2.png", alt="勁豪 125")
+          a(href="#") 繼續
+        .select-container-step.step-2
+          p 請選擇愛車顏色！
+          ul.color-1 
+            li 
+              img(src="images/select_color_1_1.png", alt="白色")
+            li 
+              img(src="images/select_color_1_2.png", alt="紫色")
+            li 
+              img(src="images/select_color_1_3.png", alt="灰色")
+          ul.color-2 
+            li 
+              img(src="images/select_color_2_1.png", alt="藍色")
+            li 
+              img(src="images/select_color_2_2.png", alt="黑色")
+            li 
+              img(src="images/select_color_2_3.png", alt="灰色")
+          a(href="#") 繼續
+
+    //- .grid 
       .vertical 
         .line 
         .line 
@@ -89,4 +149,5 @@ html(lang="zh-tw")
     //- script(src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js")
     //- script(src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.3/jquery.scrollTo.min.js")
+    script(src="js/vendor/TweenMax.min.js")
     script(src="js/index.js")

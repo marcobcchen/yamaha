@@ -6,6 +6,14 @@
   box-sizing: border-box;
 }
 
+html{
+  font-size: 12px;
+
+  @media (min-width: $media_lg) {
+    font-size: 16px;
+  }
+}
+
 body{
   font-family: 'Noto Sans TC', sans-serif;
   color: #565656;
@@ -22,7 +30,7 @@ header{
   position: fixed;
   left: 0;
   top: 0;
-  z-index: 100;
+  z-index: 50;
   width: 100%;
   height: 40px;
   background: rgba(255, 255, 255, 1);
@@ -246,7 +254,7 @@ header{
   }
 }
 
-.container{
+.main{
   position: fixed;
   left: 0;
   top: 40px;
@@ -291,7 +299,7 @@ header{
         flex: 1 0 auto;
         width: 100%;
         height: 100%;
-        background: url(../images/city.png) no-repeat center center;
+        // background: url(../images/city.png) no-repeat center center;
         background-size: auto 100%;
 
         @media (min-width: $media_lg) {
@@ -315,6 +323,95 @@ header{
           width: 75.6%;
           opacity: 0.8;
         }
+
+        .building-center{
+          position: absolute;
+          left: 39%;
+          top: 34%;
+          width: 23%;
+        }
+
+        .bike-road-1{
+          position: absolute;
+          left: 40.6%;
+          top: 67%;
+          // left: 42.6%;
+          // top: 69.6%;
+          width: 1.8%;
+        }
+
+        .bike-road-2{
+          position: absolute;
+          left: 43.5%;
+          top: 69%;
+          // left: 61.6%;
+          // top: 46.6%;
+          width: 2%;
+        }
+
+        .bike-road-3{
+          position: absolute;
+          left: 61.5%;
+          top: 45.5%;
+          // left: 55.5%;
+          // top: 38%;
+          width: 2%;
+        }
+
+        .bike-road-4{
+          position: absolute;
+          left: 55.5%;
+          top: 36.5%;
+          // left: 61.8%;
+          // top: 29.2%;
+          width: 2%;
+        }
+
+        .bike-road-5{
+          position: absolute;
+          left: 61.8%;
+          top: 28%;
+          // left: 60%;
+          // top: 26%;
+          width: 2%;
+        }
+
+        .bike-road-6{
+          position: absolute;
+          left: 59.3%;
+          top: 26%;
+          // left: 52.8%;
+          // top: 34%;
+          width: 1.8%;
+        }
+
+        .bike-road-7{
+          position: absolute;
+          left: 51.8%;
+          top: 33.5%;
+          // left: 49.8%;
+          // top: 31%;
+          width: 2%;
+        }
+
+        .bike-road-8{
+          position: absolute;
+          left: 48.9%;
+          top: 31.9%;
+          // left: 30.9%;
+          // top: 53.9%;
+          width: 1.8%;
+        }
+
+        .bike-road-9{
+          position: absolute;
+          left: 31%;
+          top: 55.2%;
+          // left: 42.6%;
+          // top: 69.6%;
+          width: 1.8%;
+        }
+
       }
     
       .dot{
@@ -330,6 +427,109 @@ header{
   }
 }
 
+.select-bike{
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .select-container{
+    max-width: 320px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+
+    @media (min-width: $media_lg) {
+      max-width: 700px;
+    }
+
+    &-head{
+      background: #e1e1e1;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 0.5rem;
+
+      @media (min-width: $media_lg) {
+        padding: 0 1rem;
+      }
+
+      .title{
+        margin: 1rem;
+      }
+
+      .talk{
+        align-self: flex-end;
+      }
+
+      .talk-2{
+        display: none;
+      }
+    }
+
+    &-step{
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      padding: 1.5rem 1rem;
+
+      @media (min-width: $media_lg) {
+        padding: 2rem;
+      }
+
+      p{
+        font-size: 1.3rem;
+        font-weight: bold;
+        color: #3a3a3a;
+      }
+
+      ul{
+        display: flex;
+        gap: 1rem;
+        margin: 1.5rem 0;
+
+        li{
+          border-radius: 10px;
+          border: 2px solid #d7d7d7;
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0);
+          transition: all .3s;
+          cursor: pointer;
+
+          &.active{
+            border: 2px solid #e60012;
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+          }
+        }
+      }
+
+      a{
+        color: #fff;
+        background: #e60012;
+        border-radius: 50px;
+        padding: 8px 60px;
+        font-weight: bold;
+        text-decoration: none;
+
+        @media (min-width: $media_lg) {
+          padding: 8px 80px;
+        }
+      }
+    }
+
+    & .step-2 > ul{
+      display: none;
+    }
+  }
+}
 
 .grid{
   position: fixed;
@@ -337,7 +537,7 @@ header{
   top: 40px;
   width: 100%;
   height: calc(100% - 40px);
-  z-index: 100;
+  z-index: 200;
   pointer-events: none;
 
   @media (min-width: $media_lg) {
