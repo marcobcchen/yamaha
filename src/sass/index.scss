@@ -299,7 +299,7 @@ header{
         flex: 1 0 auto;
         width: 100%;
         height: 100%;
-        // background: url(../images/city.png) no-repeat center center;
+        background: url(../images/city.png) no-repeat center center;
         background-size: auto 100%;
 
         @media (min-width: $media_lg) {
@@ -318,10 +318,131 @@ header{
 
         .road{
           position: absolute;
-          left: 1.6%;
-          top: 11.4%;
-          width: 75.6%;
+          left: 1.4%;
+          top: -14%;
+          width: 97.3%;
+          z-index: 10;
           opacity: 0.8;
+        }
+
+        .river{
+          position: absolute;
+          left: 75.9%;
+          top: 35.7%;
+          width: 18.7%;
+          z-index: 10;
+        }
+
+        .mountain-1{
+          position: absolute;
+          left: 4.3%;
+          top: 10.1%;
+          width: 48.1%;
+          z-index: 10;
+        }
+
+        .mountain-2{
+          position: absolute;
+          left: 51.8%;
+          top: 2.7%;
+          width: 21.2%;
+          z-index: 10;
+        }
+
+        .mountain-3{
+          position: absolute;
+          left: 64.8%;
+          top: 12.8%;
+          width: 32%;
+          z-index: 10;
+        }
+
+        .mountain-4{
+          position: absolute;
+          left: 57.2%;
+          top: 53.4%;
+          width: 34.2%;
+          z-index: 53;
+        }
+
+        .building-school{
+          position: absolute;
+          left: 30.7%;
+          top: 30.7%;
+          width: 13.6%;
+          z-index: 20;
+        }
+
+        .building-ysp{
+          position: absolute;
+          left: 41.5%;
+          top: 26.9%;
+          width: 7.7%;
+          z-index: 20;
+        }
+
+        .building-stadium{
+          position: absolute;
+          left: 46.5%;
+          top: 17.7%;
+          width: 12.4%;
+          z-index: 20;
+        }
+
+        .building-cinemas{
+          position: absolute;
+          left: 58.6%;
+          top: 31.4%;
+          width: 10.2%;
+          z-index: 30;
+        }
+
+        .building-gas-station{
+          position: absolute;
+          left: 64.3%;
+          top: 41.3%;
+          width: 10.5%;
+          z-index: 50;
+        }
+
+        .building-mall{
+          position: absolute;
+          left: 58.2%;
+          top: 49.3%;
+          width: 9.7%;
+          z-index: 68;
+        }
+
+        .building-community{
+          position: absolute;
+          left: 51%;
+          top: 57.8%;
+          width: 10.9%;
+          z-index: 70;
+        }
+
+        .building-street{
+          position: absolute;
+          left: 44.7%;
+          top: 66.6%;
+          width: 16.8%;
+          z-index: 80;
+        }
+
+        .building-good-home{
+          position: absolute;
+          left: 39%;
+          top: 57.2%;
+          width: 8.8%;
+          z-index: 65;
+        }
+
+        .building-store{
+          position: absolute;
+          left: 33%;
+          top: 52.2%;
+          width: 8.6%;
+          z-index: 60;
         }
 
         .building-center{
@@ -329,6 +450,7 @@ header{
           left: 39%;
           top: 34%;
           width: 23%;
+          z-index: 53;
         }
 
         .bike-road-1{
@@ -338,6 +460,7 @@ header{
           // left: 42.6%;
           // top: 69.6%;
           width: 1.8%;
+          z-index: 70;
         }
 
         .bike-road-2{
@@ -347,6 +470,7 @@ header{
           // left: 61.6%;
           // top: 46.6%;
           width: 2%;
+          z-index: 66;
         }
 
         .bike-road-3{
@@ -356,6 +480,7 @@ header{
           // left: 55.5%;
           // top: 38%;
           width: 2%;
+          z-index: 35;
         }
 
         .bike-road-4{
@@ -365,6 +490,7 @@ header{
           // left: 61.8%;
           // top: 29.2%;
           width: 2%;
+          z-index: 25;
         }
 
         .bike-road-5{
@@ -374,6 +500,7 @@ header{
           // left: 60%;
           // top: 26%;
           width: 2%;
+          z-index: 25;
         }
 
         .bike-road-6{
@@ -383,6 +510,7 @@ header{
           // left: 52.8%;
           // top: 34%;
           width: 1.8%;
+          z-index: 25;
         }
 
         .bike-road-7{
@@ -392,6 +520,7 @@ header{
           // left: 49.8%;
           // top: 31%;
           width: 2%;
+          z-index: 25;
         }
 
         .bike-road-8{
@@ -401,6 +530,7 @@ header{
           // left: 30.9%;
           // top: 53.9%;
           width: 1.8%;
+          z-index: 25;
         }
 
         .bike-road-9{
@@ -410,6 +540,47 @@ header{
           // left: 42.6%;
           // top: 69.6%;
           width: 1.8%;
+          z-index: 70;
+        }
+
+        .car-l{
+          position: absolute;
+          left: 78.8%;
+          top: 68.6%;
+          // left: 52.6%;
+          // top: 36%;
+          width: 2%;
+          z-index: 51;
+        }
+
+        .car-r{
+          position: absolute;
+          left: 52.8%;
+          top: 35%;
+          // left: 79.8%;
+          // top: 1.6%;
+          width: 2%;
+          z-index: 25;
+        }
+
+        .bus-r{
+          position: absolute;
+          left: 14%;
+          top: 55.8%;
+          // left: 27%;
+          // top: 39.6%;
+          width: 3.6%;
+          z-index: 53;
+        }
+
+        .bus-t{
+          position: absolute;
+          left: 29.4%;
+          top: 39%;
+          // left: 78.8%;
+          // top: 100%;
+          width: 3.6%;
+          z-index: 55;
         }
 
       }

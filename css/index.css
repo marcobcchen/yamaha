@@ -379,6 +379,7 @@ header nav .btn-change-color .text-icon {
           flex: 1 0 auto;
   width: 100%;
   height: 100%;
+  background: url(../images/city.png) no-repeat center center;
   background-size: auto 100%;
 }
 @media (min-width: 992px) {
@@ -398,70 +399,214 @@ header nav .btn-change-color .text-icon {
 }
 .main .map .city .scale-container .road {
   position: absolute;
-  left: 1.6%;
-  top: 11.4%;
-  width: 75.6%;
+  left: 1.4%;
+  top: -14%;
+  width: 97.3%;
+  z-index: 10;
   opacity: 0.8;
+}
+.main .map .city .scale-container .river {
+  position: absolute;
+  left: 75.9%;
+  top: 35.7%;
+  width: 18.7%;
+  z-index: 10;
+}
+.main .map .city .scale-container .mountain-1 {
+  position: absolute;
+  left: 4.3%;
+  top: 10.1%;
+  width: 48.1%;
+  z-index: 10;
+}
+.main .map .city .scale-container .mountain-2 {
+  position: absolute;
+  left: 51.8%;
+  top: 2.7%;
+  width: 21.2%;
+  z-index: 10;
+}
+.main .map .city .scale-container .mountain-3 {
+  position: absolute;
+  left: 64.8%;
+  top: 12.8%;
+  width: 32%;
+  z-index: 10;
+}
+.main .map .city .scale-container .mountain-4 {
+  position: absolute;
+  left: 57.2%;
+  top: 53.4%;
+  width: 34.2%;
+  z-index: 53;
+}
+.main .map .city .scale-container .building-school {
+  position: absolute;
+  left: 30.7%;
+  top: 30.7%;
+  width: 13.6%;
+  z-index: 20;
+}
+.main .map .city .scale-container .building-ysp {
+  position: absolute;
+  left: 41.5%;
+  top: 26.9%;
+  width: 7.7%;
+  z-index: 20;
+}
+.main .map .city .scale-container .building-stadium {
+  position: absolute;
+  left: 46.5%;
+  top: 17.7%;
+  width: 12.4%;
+  z-index: 20;
+}
+.main .map .city .scale-container .building-cinemas {
+  position: absolute;
+  left: 58.6%;
+  top: 31.4%;
+  width: 10.2%;
+  z-index: 30;
+}
+.main .map .city .scale-container .building-gas-station {
+  position: absolute;
+  left: 64.3%;
+  top: 41.3%;
+  width: 10.5%;
+  z-index: 50;
+}
+.main .map .city .scale-container .building-mall {
+  position: absolute;
+  left: 58.2%;
+  top: 49.3%;
+  width: 9.7%;
+  z-index: 68;
+}
+.main .map .city .scale-container .building-community {
+  position: absolute;
+  left: 51%;
+  top: 57.8%;
+  width: 10.9%;
+  z-index: 70;
+}
+.main .map .city .scale-container .building-street {
+  position: absolute;
+  left: 44.7%;
+  top: 66.6%;
+  width: 16.8%;
+  z-index: 80;
+}
+.main .map .city .scale-container .building-good-home {
+  position: absolute;
+  left: 39%;
+  top: 57.2%;
+  width: 8.8%;
+  z-index: 65;
+}
+.main .map .city .scale-container .building-store {
+  position: absolute;
+  left: 33%;
+  top: 52.2%;
+  width: 8.6%;
+  z-index: 60;
 }
 .main .map .city .scale-container .building-center {
   position: absolute;
   left: 39%;
   top: 34%;
   width: 23%;
+  z-index: 53;
 }
 .main .map .city .scale-container .bike-road-1 {
   position: absolute;
   left: 40.6%;
   top: 67%;
   width: 1.8%;
+  z-index: 70;
 }
 .main .map .city .scale-container .bike-road-2 {
   position: absolute;
   left: 43.5%;
   top: 69%;
   width: 2%;
+  z-index: 66;
 }
 .main .map .city .scale-container .bike-road-3 {
   position: absolute;
   left: 61.5%;
   top: 45.5%;
   width: 2%;
+  z-index: 35;
 }
 .main .map .city .scale-container .bike-road-4 {
   position: absolute;
   left: 55.5%;
   top: 36.5%;
   width: 2%;
+  z-index: 25;
 }
 .main .map .city .scale-container .bike-road-5 {
   position: absolute;
   left: 61.8%;
   top: 28%;
   width: 2%;
+  z-index: 25;
 }
 .main .map .city .scale-container .bike-road-6 {
   position: absolute;
   left: 59.3%;
   top: 26%;
   width: 1.8%;
+  z-index: 25;
 }
 .main .map .city .scale-container .bike-road-7 {
   position: absolute;
   left: 51.8%;
   top: 33.5%;
   width: 2%;
+  z-index: 25;
 }
 .main .map .city .scale-container .bike-road-8 {
   position: absolute;
   left: 48.9%;
   top: 31.9%;
   width: 1.8%;
+  z-index: 25;
 }
 .main .map .city .scale-container .bike-road-9 {
   position: absolute;
   left: 31%;
   top: 55.2%;
   width: 1.8%;
+  z-index: 70;
+}
+.main .map .city .scale-container .car-l {
+  position: absolute;
+  left: 78.8%;
+  top: 68.6%;
+  width: 2%;
+  z-index: 51;
+}
+.main .map .city .scale-container .car-r {
+  position: absolute;
+  left: 52.8%;
+  top: 35%;
+  width: 2%;
+  z-index: 25;
+}
+.main .map .city .scale-container .bus-r {
+  position: absolute;
+  left: 14%;
+  top: 55.8%;
+  width: 3.6%;
+  z-index: 53;
+}
+.main .map .city .scale-container .bus-t {
+  position: absolute;
+  left: 29.4%;
+  top: 39%;
+  width: 3.6%;
+  z-index: 55;
 }
 .main .map .city .dot {
   position: absolute;
