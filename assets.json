@@ -1,11 +1,6 @@
 {
   "files": [
     {
-      "source": "./images/_pic.png",
-      "type": "IMAGE",
-      "size": 151792
-    },
-    {
       "source": "./images/bike_0_0_b.png",
       "type": "IMAGE",
       "size": 14093
@@ -361,6 +356,11 @@
       "size": 71426
     },
     {
+      "source": "./images/good.png",
+      "type": "IMAGE",
+      "size": 115746
+    },
+    {
       "source": "./images/icon_close.png",
       "type": "IMAGE",
       "size": 2090
@@ -479,6 +479,11 @@
       "source": "./images/nav_icon_change.png",
       "type": "IMAGE",
       "size": 1358
+    },
+    {
+      "source": "./images/pic.png",
+      "type": "IMAGE",
+      "size": 151792
     },
     {
       "source": "./images/river.png",
