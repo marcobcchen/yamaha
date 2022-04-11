@@ -10,10 +10,38 @@ $(function(){
   let tl_car;
   let tl_bus;
 
+  $.html5Loader({
+    filesToLoad: 'assets.json',
+    onBeforeLoad: function () {
+      init();
+    },
+    onComplete: function () {
+      TweenMax.to($(".loading"), 1, {autoAlpha:0, delay:1, onComplete:function(){          
+        start();
+      }});
+    },
+    onElementLoaded: function ( obj, elm) {
+      //console.log(elm);
+    },
+    onUpdate: function ( percentage ) {
+      console.log(percentage);
+    }
+  });
+
   function init(){
     $(window).on('resize', onResize);
     onResize();
+    
+    initNav();
+    initSelectBike();
+    initBikeAnimate();
+    initCarAnimate();
+    initBusAnimate();
+    initCityAnimate();
+    initPopup();
+  }
 
+  function start(){
     lsBikeType = localStorage.getItem('bikeType');
     lsBikeColor = localStorage.getItem('bikeColor');
 
@@ -23,16 +51,10 @@ $(function(){
     if(!lsBikeType || !lsBikeColor){
       openSelectBike();
     }else{
-      initBikeColor();
+      changeBikeColor();
     }
     
-    initNav();
-    initSelectBike();
-    initBikeAnimate();
-    initCarAnimate();
-    initBusAnimate();
   }
-  init();
   
   function onResize(){
     windowWidth = $(window).innerWidth();
@@ -88,15 +110,44 @@ $(function(){
       openSelectBike();
     });
 
+    $('.navigate a').on('click', function(e){
+      clickPopup($(this), e);
+      switchNav();
+    })
+
     function switchNav(){
       $('.menu').toggleClass('open');
       $('nav').toggleClass('open');
     }
   }
 
-  function initBikeColor(){
-    lsBikeType = localStorage.getItem('bikeType');
-    lsBikeColor = localStorage.getItem('bikeColor');
+  function clickPopup(ele, e){
+    var popup = ele.data('popup');
+
+    if(popup){
+      e.preventDefault();
+      // console.log(popup);
+      $('.popup').toggleClass('open');
+
+      if(popup == "good_home"){
+        playPopupGoodHome();
+      }else{
+        scrollToCenter();
+
+        $('.popup-basic .pic').css('display', 'none');
+        $('.popup-basic .pic-'+lsBikeType+'-'+popup).css('display', 'block');
+
+        $('.popup-basic .des').css('display', 'none');
+        $('.popup-basic .des-'+lsBikeType+'-'+popup).css('display', 'block');
+
+        TweenMax.set($('.popup-basic'),  {scale: 0.5, autoAlpha: 0});
+        TweenMax.to($('.popup-basic'), 0.5, {scale: 1, autoAlpha: 1, ease: Back.easeOut, delay: 0.4});
+      }
+    }
+  }
+
+  // 改變車款、顏色
+  function changeBikeColor(){
     console.log(`重設車款：${lsBikeType}, 車色：${lsBikeColor}`);
 
     for(let i=1; i<=9; i++){
@@ -106,10 +157,13 @@ $(function(){
 
     if(isFirstTime){
       isFirstTime = false;
+
+      playCityAnimate();
       playBikeAnimate();
     }
   }
 
+  // 選擇車款、顏色
   function initSelectBike(){
     $('.select-bike .step-1 li').on('click', function(){
       $('.select-bike .step-1 li').removeClass('active');
@@ -125,7 +179,8 @@ $(function(){
       e.preventDefault();
 
       let step1 = $('.select-bike .step-1').find('.active').index();
-      localStorage.setItem('bikeType', step1)
+      localStorage.setItem('bikeType', step1);
+      lsBikeType = step1;
       
       if(step1 < 0){
         alert('請選擇您的愛車！');
@@ -149,6 +204,7 @@ $(function(){
 
       let step2 = $('.select-bike .step-2').find('.active').index();
       localStorage.setItem('bikeColor', step2);
+      lsBikeColor = step2;
 
       if(step2 < 0){
         alert('請選擇愛車顏色！');
@@ -157,7 +213,7 @@ $(function(){
         TweenMax.to($('.select-bike'), 0.3, {autoAlpha: 0, delay: 0.3});
       }
 
-      initBikeColor();
+      changeBikeColor();
     });
   }
 
@@ -171,6 +227,55 @@ $(function(){
     TweenMax.set($('.select-bike .select-container'),  {scale: 0.5, autoAlpha: 0});
     TweenMax.to($('.select-bike .select-container'), 0.5, {scale: 1, autoAlpha: 1, ease: Back.easeOut, delay: 0.4});
     TweenMax.to($('.select-bike'), 0.3, {autoAlpha: 1, delay: 0.1});
+  }
+
+  // 設置 popup
+  function initPopup(){
+    $('.flag').on('click', function(e){
+      clickPopup($(this), e);
+    });
+
+    $('.popup-basic .btn-close').on('click', function(){
+        TweenMax.to($('.popup-basic'), 0.5, {scale: 0.5, autoAlpha: 0, ease: Back.easeOut, onComplete: function(){
+        $('.popup').toggleClass('open');
+      }});
+    });
+
+    $('.popup-good-home .btn-close').on('click', function(){
+      closePopupGoodHome();
+    });
+  }
+
+  // play popup good home
+  function playPopupGoodHome(){
+    TweenMax.set($('.popup-good-home .man-1'), {autoAlpha: 0, scale: 0.5});
+    TweenMax.set($('.popup-good-home .man-2'), {autoAlpha: 0, scale: 0.5});
+    TweenMax.set($('.popup-good-home .man-3'), {autoAlpha: 0, scale: 0.5});
+    TweenMax.set($('.popup-good-home .man-4'), {autoAlpha: 0, scale: 0.5});
+    TweenMax.set($('.popup-good-home .man-5'), {autoAlpha: 0, scale: 0.5});
+    TweenMax.set($('.popup-good-home .man-talk'), {autoAlpha: 0, scale: 0.5, y: 20});
+    TweenMax.set($('.popup-good-home .btn-close'), {autoAlpha: 0, scale: 0.5});
+
+    TweenMax.to($('.popup-good-home .man-1'), 0.1, {autoAlpha: 1, scale: 1, delay: 0.05, ease: Back.easeOut});
+    TweenMax.to($('.popup-good-home .man-2'), 0.1, {autoAlpha: 1, scale: 1, delay: 0.05, ease: Back.easeOut});
+    TweenMax.to($('.popup-good-home .man-3'), 0.1, {autoAlpha: 1, scale: 1, delay: 0.07, ease: Back.easeOut});
+    TweenMax.to($('.popup-good-home .man-4'), 0.1, {autoAlpha: 1, scale: 1, delay: 0.09, ease: Back.easeOut});
+    TweenMax.to($('.popup-good-home .man-5'), 0.1, {autoAlpha: 1, scale: 1, delay: 0.09, ease: Back.easeOut});
+    TweenMax.to($('.popup-good-home .man-talk'), 0.3, {autoAlpha: 1, scale: 1, y: 0, delay: 0.2, ease: Back.easeOut});
+    TweenMax.to($('.popup-good-home .btn-close'), 0.3, {autoAlpha: 1, scale: 1, delay: 0.25, ease: Back.easeOut});
+  }
+
+  // close popup good home
+  function closePopupGoodHome(){
+    TweenMax.to($('.popup-good-home .man-1'), 0.3, {autoAlpha: 0, scale: 0.5, ease: Back.easeOut});
+    TweenMax.to($('.popup-good-home .man-2'), 0.3, {autoAlpha: 0, scale: 0.5, ease: Back.easeOut});
+    TweenMax.to($('.popup-good-home .man-3'), 0.3, {autoAlpha: 0, scale: 0.5, ease: Back.easeOut});
+    TweenMax.to($('.popup-good-home .man-4'), 0.3, {autoAlpha: 0, scale: 0.5, ease: Back.easeOut});
+    TweenMax.to($('.popup-good-home .man-5'), 0.3, {autoAlpha: 0, scale: 0.5, ease: Back.easeOut});
+    TweenMax.to($('.popup-good-home .man-talk'), 0.3, {autoAlpha: 0, scale: 0.5, y: 20, ease: Back.easeOut});
+    TweenMax.to($('.popup-good-home .btn-close'), 0.3, {autoAlpha: 0, scale: 0.5, ease: Back.easeOut, onComplete: function(){
+      $('.popup').toggleClass('open');
+    }});
   }
 
   // 設置機車動畫
@@ -213,6 +318,7 @@ $(function(){
     tl_bus.to($('.bus-t'), 0, {alpha: 1});
     tl_bus.addCallback(function(){
       $('.building-community').css('zIndex', 54);
+      $('.farm-house-2').css('zIndex', 56);
     });
     tl_bus.to($('.bus-t'), 10 * addSpeed, {left: '78.8%', top: '100%', ease: Linear.easeNone});
     tl_bus.addCallback(function(){
@@ -256,6 +362,9 @@ $(function(){
     tl.to($('.bike-road-7'), 1 * addSpeed, {left: '49.8%', top: '31%', ease: Linear.easeNone});
     tl.to($('.bike-road-7'), 0, {alpha: 0});
     tl.to($('.bike-road-8'), 0, {alpha: 1});
+    tl.addCallback(function(){
+      $('.farm-house-2').css('zIndex', 10);
+    });
     tl.to($('.bike-road-8'), 7 * addSpeed, {left: '30.9%', top: '53.9%', ease: Linear.easeNone});
     tl.to($('.bike-road-8'), 0, {alpha: 0});
     tl.to($('.bike-road-9'), 0, {alpha: 1});
@@ -264,6 +373,43 @@ $(function(){
     tl.addCallback(function(){
       tl.seek('restart').play();
     });
+  }
+
+  // 設置機車動畫
+  function initCityAnimate(){
+    var buildingY = 20;
+    TweenMax.set($('.building-center'), {autoAlpha: 0, y: buildingY});
+    TweenMax.set($('.building-school'), {autoAlpha: 0, y: buildingY});
+    TweenMax.set($('.building-ysp'), {autoAlpha: 0, y: buildingY});
+    TweenMax.set($('.building-stadium'), {autoAlpha: 0, y: buildingY});
+    TweenMax.set($('.building-cinemas'), {autoAlpha: 0, y: buildingY});
+    TweenMax.set($('.building-gas-station'), {autoAlpha: 0, y: buildingY});
+    TweenMax.set($('.building-mall'), {autoAlpha: 0, y: buildingY});
+    TweenMax.set($('.building-community'), {autoAlpha: 0, y: buildingY});
+    TweenMax.set($('.building-street'), {autoAlpha: 0, y: buildingY});
+    TweenMax.set($('.building-good-home'), {autoAlpha: 0, y: buildingY});
+    TweenMax.set($('.building-store'), {autoAlpha: 0, y: buildingY});
+
+    TweenMax.set($('.flag'), {autoAlpha: 0, y: -50});
+    TweenMax.set($('.flag-main'), {autoAlpha: 0, y: -50});
+  }
+
+  // 播放進場動畫
+  function playCityAnimate(){
+    TweenMax.to($('.building-center'), 0.6, {autoAlpha: 1, y: 0, ease: Back.easeOut, delay: 0.1});
+    TweenMax.to($('.building-school'), 0.6, {autoAlpha: 1, y: 0, ease: Back.easeOut, delay: 0.2});
+    TweenMax.to($('.building-ysp'), 0.6, {autoAlpha: 1, y: 0, ease: Back.easeOut, delay: 0.3});
+    TweenMax.to($('.building-stadium'), 0.6, {autoAlpha: 1, y: 0, ease: Back.easeOut, delay: 0.4});
+    TweenMax.to($('.building-cinemas'), 0.6, {autoAlpha: 1, y: 0, ease: Back.easeOut, delay: 0.5});
+    TweenMax.to($('.building-gas-station'), 0.6, {autoAlpha: 1, y: 0, ease: Back.easeOut, delay: 0.6});
+    TweenMax.to($('.building-mall'), 0.6, {autoAlpha: 1, y: 0, ease: Back.easeOut, delay: 0.7});
+    TweenMax.to($('.building-community'), 0.6, {autoAlpha: 1, y: 0, ease: Back.easeOut, delay: 0.8});
+    TweenMax.to($('.building-street'), 0.6, {autoAlpha: 1, y: 0, ease: Back.easeOut, delay: 0.9});
+    TweenMax.to($('.building-good-home'), 0.6, {autoAlpha: 1, y: 0, ease: Back.easeOut, delay: 1});
+    TweenMax.to($('.building-store'), 0.6, {autoAlpha: 1, y: 0, ease: Back.easeOut, delay: 1.1});
+
+    TweenMax.to($('.flag'), 0.6, {autoAlpha: 1, y: 0, ease: Back.easeOut, delay: 1.3});
+    TweenMax.to($('.flag-main'), 0.6, {autoAlpha: 1, y: 0, ease: Back.easeOut, delay: 1.5});
   }
 
 });

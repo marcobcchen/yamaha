@@ -1,0 +1,554 @@
+{
+  "files": [
+    {
+      "source": "./images/_good.png",
+      "type": "IMAGE",
+      "size": 115746
+    },
+    {
+      "source": "./images/_pic.png",
+      "type": "IMAGE",
+      "size": 151792
+    },
+    {
+      "source": "./images/bike_0_0_b.png",
+      "type": "IMAGE",
+      "size": 14093
+    },
+    {
+      "source": "./images/bike_0_0_l.png",
+      "type": "IMAGE",
+      "size": 13117
+    },
+    {
+      "source": "./images/bike_0_0_r.png",
+      "type": "IMAGE",
+      "size": 13003
+    },
+    {
+      "source": "./images/bike_0_0_t.png",
+      "type": "IMAGE",
+      "size": 14638
+    },
+    {
+      "source": "./images/bike_0_1_b.png",
+      "type": "IMAGE",
+      "size": 14410
+    },
+    {
+      "source": "./images/bike_0_1_l.png",
+      "type": "IMAGE",
+      "size": 13138
+    },
+    {
+      "source": "./images/bike_0_1_r.png",
+      "type": "IMAGE",
+      "size": 13067
+    },
+    {
+      "source": "./images/bike_0_1_t.png",
+      "type": "IMAGE",
+      "size": 14871
+    },
+    {
+      "source": "./images/bike_0_2_b.png",
+      "type": "IMAGE",
+      "size": 13503
+    },
+    {
+      "source": "./images/bike_0_2_l.png",
+      "type": "IMAGE",
+      "size": 12903
+    },
+    {
+      "source": "./images/bike_0_2_r.png",
+      "type": "IMAGE",
+      "size": 12801
+    },
+    {
+      "source": "./images/bike_0_2_t.png",
+      "type": "IMAGE",
+      "size": 14004
+    },
+    {
+      "source": "./images/bike_1_0_b.png",
+      "type": "IMAGE",
+      "size": 15560
+    },
+    {
+      "source": "./images/bike_1_0_l.png",
+      "type": "IMAGE",
+      "size": 13620
+    },
+    {
+      "source": "./images/bike_1_0_r.png",
+      "type": "IMAGE",
+      "size": 13621
+    },
+    {
+      "source": "./images/bike_1_0_t.png",
+      "type": "IMAGE",
+      "size": 16123
+    },
+    {
+      "source": "./images/bike_1_1_b.png",
+      "type": "IMAGE",
+      "size": 14762
+    },
+    {
+      "source": "./images/bike_1_1_l.png",
+      "type": "IMAGE",
+      "size": 13268
+    },
+    {
+      "source": "./images/bike_1_1_r.png",
+      "type": "IMAGE",
+      "size": 13315
+    },
+    {
+      "source": "./images/bike_1_1_t.png",
+      "type": "IMAGE",
+      "size": 15227
+    },
+    {
+      "source": "./images/bike_1_2_b.png",
+      "type": "IMAGE",
+      "size": 15317
+    },
+    {
+      "source": "./images/bike_1_2_l.png",
+      "type": "IMAGE",
+      "size": 13471
+    },
+    {
+      "source": "./images/bike_1_2_r.png",
+      "type": "IMAGE",
+      "size": 13561
+    },
+    {
+      "source": "./images/bike_1_2_t.png",
+      "type": "IMAGE",
+      "size": 15880
+    },
+    {
+      "source": "./images/building_center.png",
+      "type": "IMAGE",
+      "size": 193652
+    },
+    {
+      "source": "./images/building_center_balloon.png",
+      "type": "IMAGE",
+      "size": 16240
+    },
+    {
+      "source": "./images/building_center_board.png",
+      "type": "IMAGE",
+      "size": 14584
+    },
+    {
+      "source": "./images/building_center_house.png",
+      "type": "IMAGE",
+      "size": 34874
+    },
+    {
+      "source": "./images/building_center_land.png",
+      "type": "IMAGE",
+      "size": 100129
+    },
+    {
+      "source": "./images/building_center_mark.png",
+      "type": "IMAGE",
+      "size": 22950
+    },
+    {
+      "source": "./images/building_cinemas.png",
+      "type": "IMAGE",
+      "size": 194691
+    },
+    {
+      "source": "./images/building_community.png",
+      "type": "IMAGE",
+      "size": 162823
+    },
+    {
+      "source": "./images/building_gas_station.png",
+      "type": "IMAGE",
+      "size": 139557
+    },
+    {
+      "source": "./images/building_good_home.png",
+      "type": "IMAGE",
+      "size": 81578
+    },
+    {
+      "source": "./images/building_house_1.png",
+      "type": "IMAGE",
+      "size": 27124
+    },
+    {
+      "source": "./images/building_house_2.png",
+      "type": "IMAGE",
+      "size": 28879
+    },
+    {
+      "source": "./images/building_mall.png",
+      "type": "IMAGE",
+      "size": 120620
+    },
+    {
+      "source": "./images/building_school.png",
+      "type": "IMAGE",
+      "size": 199609
+    },
+    {
+      "source": "./images/building_stadium.png",
+      "type": "IMAGE",
+      "size": 115999
+    },
+    {
+      "source": "./images/building_store.png",
+      "type": "IMAGE",
+      "size": 65824
+    },
+    {
+      "source": "./images/building_street.png",
+      "type": "IMAGE",
+      "size": 121766
+    },
+    {
+      "source": "./images/building_ysp.png",
+      "type": "IMAGE",
+      "size": 48418
+    },
+    {
+      "source": "./images/bus_b.png",
+      "type": "IMAGE",
+      "size": 18814
+    },
+    {
+      "source": "./images/bus_l.png",
+      "type": "IMAGE",
+      "size": 14551
+    },
+    {
+      "source": "./images/bus_r.png",
+      "type": "IMAGE",
+      "size": 13639
+    },
+    {
+      "source": "./images/bus_t.png",
+      "type": "IMAGE",
+      "size": 21861
+    },
+    {
+      "source": "./images/car_b.png",
+      "type": "IMAGE",
+      "size": 11138
+    },
+    {
+      "source": "./images/car_l.png",
+      "type": "IMAGE",
+      "size": 10811
+    },
+    {
+      "source": "./images/car_r.png",
+      "type": "IMAGE",
+      "size": 10640
+    },
+    {
+      "source": "./images/car_t.png",
+      "type": "IMAGE",
+      "size": 11568
+    },
+    {
+      "source": "./images/city.png",
+      "type": "IMAGE",
+      "size": 2290428
+    },
+    {
+      "source": "./images/farm_1.png",
+      "type": "IMAGE",
+      "size": 36194
+    },
+    {
+      "source": "./images/farm_2.png",
+      "type": "IMAGE",
+      "size": 69816
+    },
+    {
+      "source": "./images/farm_3.png",
+      "type": "IMAGE",
+      "size": 24199
+    },
+    {
+      "source": "./images/farm_4.png",
+      "type": "IMAGE",
+      "size": 14191
+    },
+    {
+      "source": "./images/farm_5.png",
+      "type": "IMAGE",
+      "size": 11106
+    },
+    {
+      "source": "./images/farm_6.png",
+      "type": "IMAGE",
+      "size": 12288
+    },
+    {
+      "source": "./images/farm_7.png",
+      "type": "IMAGE",
+      "size": 31881
+    },
+    {
+      "source": "./images/farm_8.png",
+      "type": "IMAGE",
+      "size": 37906
+    },
+    {
+      "source": "./images/farm_9.png",
+      "type": "IMAGE",
+      "size": 11245
+    },
+    {
+      "source": "./images/farm_frame_1.png",
+      "type": "IMAGE",
+      "size": 72127
+    },
+    {
+      "source": "./images/farm_frame_2.png",
+      "type": "IMAGE",
+      "size": 34393
+    },
+    {
+      "source": "./images/farm_house_1.png",
+      "type": "IMAGE",
+      "size": 16102
+    },
+    {
+      "source": "./images/farm_house_2.png",
+      "type": "IMAGE",
+      "size": 31821
+    },
+    {
+      "source": "./images/farm_house_3.png",
+      "type": "IMAGE",
+      "size": 11459
+    },
+    {
+      "source": "./images/farm_house_4.png",
+      "type": "IMAGE",
+      "size": 39553
+    },
+    {
+      "source": "./images/farm_house_5.png",
+      "type": "IMAGE",
+      "size": 14538
+    },
+    {
+      "source": "./images/flag.png",
+      "type": "IMAGE",
+      "size": 4078
+    },
+    {
+      "source": "./images/flag_halo.png",
+      "type": "IMAGE",
+      "size": 4256
+    },
+    {
+      "source": "./images/flag_main_1.png",
+      "type": "IMAGE",
+      "size": 71876
+    },
+    {
+      "source": "./images/flag_main_2.png",
+      "type": "IMAGE",
+      "size": 71426
+    },
+    {
+      "source": "./images/icon_close.png",
+      "type": "IMAGE",
+      "size": 2090
+    },
+    {
+      "source": "./images/logo.png",
+      "type": "IMAGE",
+      "size": 8102
+    },
+    {
+      "source": "./images/man_1.png",
+      "type": "IMAGE",
+      "size": 21304
+    },
+    {
+      "source": "./images/man_2.png",
+      "type": "IMAGE",
+      "size": 24277
+    },
+    {
+      "source": "./images/man_3.png",
+      "type": "IMAGE",
+      "size": 21948
+    },
+    {
+      "source": "./images/man_4.png",
+      "type": "IMAGE",
+      "size": 23938
+    },
+    {
+      "source": "./images/man_5.png",
+      "type": "IMAGE",
+      "size": 20864
+    },
+    {
+      "source": "./images/man_talk.png",
+      "type": "IMAGE",
+      "size": 12463
+    },
+    {
+      "source": "./images/menu_back.png",
+      "type": "IMAGE",
+      "size": 4973
+    },
+    {
+      "source": "./images/menu_close.png",
+      "type": "IMAGE",
+      "size": 1721
+    },
+    {
+      "source": "./images/menu_open.png",
+      "type": "IMAGE",
+      "size": 2174
+    },
+    {
+      "source": "./images/mountain_1.png",
+      "type": "IMAGE",
+      "size": 39977
+    },
+    {
+      "source": "./images/mountain_2.png",
+      "type": "IMAGE",
+      "size": 16355
+    },
+    {
+      "source": "./images/mountain_3.png",
+      "type": "IMAGE",
+      "size": 39391
+    },
+    {
+      "source": "./images/mountain_4.png",
+      "type": "IMAGE",
+      "size": 48607
+    },
+    {
+      "source": "./images/nav_bike.png",
+      "type": "IMAGE",
+      "size": 6142
+    },
+    {
+      "source": "./images/nav_icon.png",
+      "type": "IMAGE",
+      "size": 21889
+    },
+    {
+      "source": "./images/nav_icon_1.png",
+      "type": "IMAGE",
+      "size": 10505
+    },
+    {
+      "source": "./images/nav_icon_2.png",
+      "type": "IMAGE",
+      "size": 10585
+    },
+    {
+      "source": "./images/nav_icon_3.png",
+      "type": "IMAGE",
+      "size": 9407
+    },
+    {
+      "source": "./images/nav_icon_4.png",
+      "type": "IMAGE",
+      "size": 9933
+    },
+    {
+      "source": "./images/nav_icon_5.png",
+      "type": "IMAGE",
+      "size": 9531
+    },
+    {
+      "source": "./images/nav_icon_6.png",
+      "type": "IMAGE",
+      "size": 13294
+    },
+    {
+      "source": "./images/nav_icon_change.png",
+      "type": "IMAGE",
+      "size": 1358
+    },
+    {
+      "source": "./images/river.png",
+      "type": "IMAGE",
+      "size": 18042
+    },
+    {
+      "source": "./images/road_1.png",
+      "type": "IMAGE",
+      "size": 403381
+    },
+    {
+      "source": "./images/select_bike_1.png",
+      "type": "IMAGE",
+      "size": 48146
+    },
+    {
+      "source": "./images/select_bike_2.png",
+      "type": "IMAGE",
+      "size": 63955
+    },
+    {
+      "source": "./images/select_color_1_1.png",
+      "type": "IMAGE",
+      "size": 36145
+    },
+    {
+      "source": "./images/select_color_1_2.png",
+      "type": "IMAGE",
+      "size": 37770
+    },
+    {
+      "source": "./images/select_color_1_3.png",
+      "type": "IMAGE",
+      "size": 36780
+    },
+    {
+      "source": "./images/select_color_2_1.png",
+      "type": "IMAGE",
+      "size": 42601
+    },
+    {
+      "source": "./images/select_color_2_2.png",
+      "type": "IMAGE",
+      "size": 41976
+    },
+    {
+      "source": "./images/select_color_2_3.png",
+      "type": "IMAGE",
+      "size": 42171
+    },
+    {
+      "source": "./images/select_talk_1.png",
+      "type": "IMAGE",
+      "size": 25442
+    },
+    {
+      "source": "./images/select_talk_2.png",
+      "type": "IMAGE",
+      "size": 26911
+    },
+    {
+      "source": "./images/select_title.png",
+      "type": "IMAGE",
+      "size": 15660
+    }
+  ]
+}

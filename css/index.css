@@ -179,6 +179,7 @@ header nav .title {
       -ms-flex-align: center;
           align-items: center;
   margin: 1rem 0;
+  text-decoration: none;
 }
 header nav .title .pic {
   position: absolute;
@@ -362,7 +363,7 @@ header nav .btn-change-color .text-icon {
   min-width: 1000px;
   height: 100%;
   min-height: 800px;
-  background-color: rgba(144, 238, 144, 0.6);
+  background-color: #CBD366;
   -webkit-transition: all 0.8s ease-out;
   transition: all 0.8s ease-out;
   overflow: hidden;
@@ -379,7 +380,6 @@ header nav .btn-change-color .text-icon {
           flex: 1 0 auto;
   width: 100%;
   height: 100%;
-  background: url(../images/city.png) no-repeat center center;
   background-size: auto 100%;
 }
 @media (min-width: 992px) {
@@ -395,7 +395,6 @@ header nav .btn-change-color .text-icon {
           transform: translate(-50%, -50%);
   width: auto;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
 }
 .main .map .city .scale-container .road {
   position: absolute;
@@ -403,13 +402,173 @@ header nav .btn-change-color .text-icon {
   top: -14%;
   width: 97.3%;
   z-index: 10;
-  opacity: 0.8;
 }
 .main .map .city .scale-container .river {
   position: absolute;
   left: 75.9%;
   top: 35.7%;
   width: 18.7%;
+  z-index: 10;
+}
+.main .map .city .scale-container .farm-1 {
+  position: absolute;
+  left: 70.4%;
+  top: 52.4%;
+  width: 9.8%;
+  z-index: 10;
+}
+.main .map .city .scale-container .farm-2 {
+  position: absolute;
+  left: 67%;
+  top: 73.4%;
+  width: 13.4%;
+  z-index: 10;
+}
+.main .map .city .scale-container .farm-3 {
+  position: absolute;
+  left: 21.8%;
+  top: 36%;
+  width: 6.2%;
+  z-index: 10;
+}
+.main .map .city .scale-container .farm-4 {
+  position: absolute;
+  left: 12.8%;
+  top: 42.6%;
+  width: 9.6%;
+  z-index: 10;
+}
+.main .map .city .scale-container .farm-5 {
+  position: absolute;
+  left: 20.8%;
+  top: 48%;
+  width: 11.2%;
+  z-index: 10;
+}
+.main .map .city .scale-container .farm-6 {
+  position: absolute;
+  left: 13.3%;
+  top: 57.3%;
+  width: 11.2%;
+  z-index: 12;
+}
+.main .map .city .scale-container .farm-7 {
+  position: absolute;
+  left: 26.6%;
+  top: 65.3%;
+  width: 11.2%;
+  z-index: 10;
+}
+.main .map .city .scale-container .farm-8 {
+  position: absolute;
+  left: 18.6%;
+  top: 73.3%;
+  width: 13%;
+  z-index: 10;
+}
+.main .map .city .scale-container .farm-9 {
+  position: absolute;
+  left: 21.8%;
+  top: 69.2%;
+  width: 7.8%;
+  z-index: 10;
+}
+.main .map .city .scale-container .farm-10 {
+  position: absolute;
+  left: 27%;
+  top: 75.6%;
+  width: 7.8%;
+  z-index: 10;
+}
+.main .map .city .scale-container .farm-11 {
+  position: absolute;
+  left: 41%;
+  top: 76%;
+  width: 7.8%;
+  z-index: 10;
+}
+.main .map .city .scale-container .farm-12 {
+  position: absolute;
+  left: 33.8%;
+  top: 67.2%;
+  width: 7.6%;
+  z-index: 10;
+}
+.main .map .city .scale-container .farm-13 {
+  position: absolute;
+  left: 15.4%;
+  top: 77.2%;
+  width: 7.6%;
+  z-index: 10;
+}
+.main .map .city .scale-container .farm-14 {
+  position: absolute;
+  left: 20.8%;
+  top: 83.8%;
+  width: 7.6%;
+  z-index: 10;
+}
+.main .map .city .scale-container .farm-15 {
+  position: absolute;
+  left: 37.2%;
+  top: 80.8%;
+  width: 7.6%;
+  z-index: 10;
+}
+.main .map .city .scale-container .farm-16 {
+  position: absolute;
+  left: 42.8%;
+  top: 82.4%;
+  width: 8.8%;
+  z-index: 10;
+}
+.main .map .city .scale-container .farm-house-1 {
+  position: absolute;
+  left: 19.1%;
+  top: 37%;
+  width: 7.2%;
+  z-index: 10;
+}
+.main .map .city .scale-container .farm-house-2 {
+  position: absolute;
+  left: 27.4%;
+  top: 43.4%;
+  width: 8.2%;
+  z-index: 56;
+}
+.main .map .city .scale-container .farm-house-3 {
+  position: absolute;
+  left: 19.5%;
+  top: 55.4%;
+  width: 4.7%;
+  z-index: 10;
+}
+.main .map .city .scale-container .farm-house-4 {
+  position: absolute;
+  left: 29%;
+  top: 58%;
+  width: 8%;
+  z-index: 72;
+}
+.main .map .city .scale-container .farm-house-5 {
+  position: absolute;
+  left: 25.2%;
+  top: 64.6%;
+  width: 4%;
+  z-index: 10;
+}
+.main .map .city .scale-container .farm-frame-1 {
+  position: absolute;
+  left: 17.2%;
+  top: 59.4%;
+  width: 25.2%;
+  z-index: 10;
+}
+.main .map .city .scale-container .farm-frame-2 {
+  position: absolute;
+  left: 36.8%;
+  top: 74.6%;
+  width: 15.8%;
   z-index: 10;
 }
 .main .map .city .scale-container .mountain-1 {
@@ -439,6 +598,20 @@ header nav .btn-change-color .text-icon {
   top: 53.4%;
   width: 34.2%;
   z-index: 53;
+}
+.main .map .city .scale-container .building-house-1 {
+  position: absolute;
+  left: 57.2%;
+  top: 18.8%;
+  width: 6%;
+  z-index: 20;
+}
+.main .map .city .scale-container .building-house-2 {
+  position: absolute;
+  left: 72.8%;
+  top: 34.6%;
+  width: 5.4%;
+  z-index: 20;
 }
 .main .map .city .scale-container .building-school {
   position: absolute;
@@ -516,6 +689,45 @@ header nav .btn-change-color .text-icon {
   top: 34%;
   width: 23%;
   z-index: 53;
+}
+.main .map .city .scale-container .building-center > img {
+  opacity: 0;
+}
+.main .map .city .scale-container .building-center .building-center-land {
+  position: absolute;
+  left: 0%;
+  top: 6%;
+  width: 100%;
+}
+.main .map .city .scale-container .building-center .building-center-balloon-1 {
+  position: absolute;
+  left: 37%;
+  top: 2%;
+  width: 25%;
+}
+.main .map .city .scale-container .building-center .building-center-balloon-2 {
+  position: absolute;
+  left: 60%;
+  top: 23%;
+  width: 25%;
+}
+.main .map .city .scale-container .building-center .building-center-house {
+  position: absolute;
+  left: 49.2%;
+  top: 0%;
+  width: 31%;
+}
+.main .map .city .scale-container .building-center .building-center-board {
+  position: absolute;
+  left: 41.2%;
+  top: 34%;
+  width: 26%;
+}
+.main .map .city .scale-container .building-center .building-center-mark {
+  position: absolute;
+  left: 9.8%;
+  top: 33%;
+  width: 46%;
 }
 .main .map .city .scale-container .bike-road-1 {
   position: absolute;
@@ -607,6 +819,229 @@ header nav .btn-change-color .text-icon {
   top: 39%;
   width: 3.6%;
   z-index: 55;
+}
+.main .map .city .scale-container .flag-main {
+  display: block;
+  position: absolute;
+  left: 46.2%;
+  top: 31%;
+  width: 4%;
+  z-index: 90;
+  cursor: pointer;
+  -webkit-animation: upDown 1s 3s infinite alternate;
+          animation: upDown 1s 3s infinite alternate;
+}
+.main .map .city .scale-container .flag-main::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 100%;
+  padding-bottom: 198.42%;
+  background: url(../images/flag_main_1.png) no-repeat center center;
+  background-size: contain;
+}
+.main .map .city .scale-container .flag-main::after {
+  content: "";
+  display: block;
+  width: 100%;
+  padding-bottom: 198.42%;
+  background: url(../images/flag_main_2.png) no-repeat center center;
+  background-size: contain;
+}
+.main .map .city .scale-container .flag {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 1.6%;
+  z-index: 90;
+  cursor: pointer;
+  -webkit-animation: upDown 1s 4s infinite alternate;
+          animation: upDown 1s 4s infinite alternate;
+}
+.main .map .city .scale-container .flag::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 100%;
+  padding-bottom: 132.55%;
+  background: url(../images/flag_halo.png) no-repeat center center;
+  background-size: contain;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+.main .map .city .scale-container .flag::after {
+  content: "";
+  display: block;
+  width: 100%;
+  padding-bottom: 132.55%;
+  background: url(../images/flag.png) no-repeat center center;
+  background-size: contain;
+}
+.main .map .city .scale-container .flag:hover::before {
+  opacity: 1;
+}
+.main .map .city .scale-container .flag-1 {
+  left: 37.4%;
+  top: 30%;
+}
+.main .map .city .scale-container .flag-2 {
+  left: 44.4%;
+  top: 26%;
+}
+.main .map .city .scale-container .flag-3 {
+  left: 53.4%;
+  top: 24%;
+}
+.main .map .city .scale-container .flag-4 {
+  left: 63.4%;
+  top: 32%;
+}
+.main .map .city .scale-container .flag-5 {
+  left: 61.8%;
+  top: 48%;
+}
+.main .map .city .scale-container .flag-6 {
+  left: 41.6%;
+  top: 56%;
+}
+.main .map .city .scale-container .popup {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  z-index: 100;
+}
+.main .map .city .scale-container .popup.open {
+  display: block;
+}
+.main .map .city .scale-container .popup-good-home {
+  position: absolute;
+  left: 38%;
+  top: 47%;
+  width: 10.6%;
+}
+.main .map .city .scale-container .popup-good-home .group {
+  width: 100%;
+  padding-top: 96.72%;
+  background-size: 100% auto;
+}
+.main .map .city .scale-container .popup-good-home .man-1 {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  left: 19%;
+  top: 34%;
+  width: 23%;
+}
+.main .map .city .scale-container .popup-good-home .man-2 {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  left: 54%;
+  top: 35%;
+  width: 24%;
+}
+.main .map .city .scale-container .popup-good-home .man-3 {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  left: 35%;
+  top: 48%;
+  width: 24%;
+}
+.main .map .city .scale-container .popup-good-home .man-4 {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  left: 0%;
+  top: 41%;
+  width: 23%;
+}
+.main .map .city .scale-container .popup-good-home .man-5 {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  left: 73%;
+  top: 49%;
+  width: 23%;
+}
+.main .map .city .scale-container .popup-good-home .man-talk {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  left: 16%;
+  top: 0%;
+  width: 72%;
+}
+.main .map .city .scale-container .popup-good-home .btn-close {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  left: 88%;
+  top: 0%;
+  width: 12%;
+  cursor: pointer;
+}
+.main .map .city .scale-container .popup-basic {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  max-width: 320px;
+  padding: 1rem 0.75rem;
+  background: #fff;
+  -webkit-box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.4);
+          box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.4);
+}
+@media (min-width: 992px) {
+  .main .map .city .scale-container .popup-basic {
+    max-width: 350px;
+  }
+}
+.main .map .city .scale-container .popup-basic .pic {
+  display: none;
+  margin-bottom: 1rem;
+}
+.main .map .city .scale-container .popup-basic .des {
+  display: none;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+@media (min-width: 992px) {
+  .main .map .city .scale-container .popup-basic .des {
+    font-size: 1rem;
+  }
+}
+.main .map .city .scale-container .popup-basic .btn-close {
+  color: #fff;
+  background: #e60012;
+  border-radius: 50px;
+  padding: 8px 60px;
+  font-weight: bold;
+  cursor: pointer;
 }
 .main .map .city .dot {
   position: absolute;
@@ -737,6 +1172,16 @@ header nav .btn-change-color .text-icon {
   display: none;
 }
 
+.loading {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #333;
+  z-index: 900;
+}
+
 .grid {
   position: fixed;
   left: 0;
@@ -788,4 +1233,34 @@ header nav .btn-change-color .text-icon {
   width: 100%;
   height: 1px;
   background: green;
+}
+
+@-webkit-keyframes upDown {
+  100% {
+    -webkit-transform: translateY(-12px);
+            transform: translateY(-12px);
+  }
+}
+
+@keyframes upDown {
+  100% {
+    -webkit-transform: translateY(-12px);
+            transform: translateY(-12px);
+  }
+}
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
