@@ -1,11 +1,6 @@
 {
   "files": [
     {
-      "source": "./images/_good.png",
-      "type": "IMAGE",
-      "size": 115746
-    },
-    {
       "source": "./images/_pic.png",
       "type": "IMAGE",
       "size": 151792
