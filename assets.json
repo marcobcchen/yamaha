@@ -1,6 +1,11 @@
 {
   "files": [
     {
+      "source": "./images/apple-touch-icon.png",
+      "type": "IMAGE",
+      "size": 586150
+    },
+    {
       "source": "./images/bike_0_0_b.png",
       "type": "IMAGE",
       "size": 14093
@@ -338,7 +343,7 @@
     {
       "source": "./images/flag.png",
       "type": "IMAGE",
-      "size": 4078
+      "size": 12154
     },
     {
       "source": "./images/flag_halo.png",
@@ -348,12 +353,12 @@
     {
       "source": "./images/flag_main_1.png",
       "type": "IMAGE",
-      "size": 71876
+      "size": 116644
     },
     {
       "source": "./images/flag_main_2.png",
       "type": "IMAGE",
-      "size": 71426
+      "size": 142704
     },
     {
       "source": "./images/good.png",
@@ -366,6 +371,11 @@
       "size": 2090
     },
     {
+      "source": "./images/loading.gif",
+      "type": "IMAGE",
+      "size": 26855
+    },
+    {
       "source": "./images/logo.png",
       "type": "IMAGE",
       "size": 8102
@@ -373,27 +383,52 @@
     {
       "source": "./images/man_1.png",
       "type": "IMAGE",
-      "size": 21304
+      "size": 6079
     },
     {
       "source": "./images/man_2.png",
       "type": "IMAGE",
-      "size": 24277
+      "size": 8338
     },
     {
       "source": "./images/man_3.png",
       "type": "IMAGE",
-      "size": 21948
+      "size": 7360
     },
     {
       "source": "./images/man_4.png",
       "type": "IMAGE",
-      "size": 23938
+      "size": 8026
     },
     {
       "source": "./images/man_5.png",
       "type": "IMAGE",
-      "size": 20864
+      "size": 6451
+    },
+    {
+      "source": "./images/man_head_1.png",
+      "type": "IMAGE",
+      "size": 16237
+    },
+    {
+      "source": "./images/man_head_2.png",
+      "type": "IMAGE",
+      "size": 17730
+    },
+    {
+      "source": "./images/man_head_3.png",
+      "type": "IMAGE",
+      "size": 16501
+    },
+    {
+      "source": "./images/man_head_4.png",
+      "type": "IMAGE",
+      "size": 17344
+    },
+    {
+      "source": "./images/man_head_5.png",
+      "type": "IMAGE",
+      "size": 15927
     },
     {
       "source": "./images/man_talk.png",
@@ -434,6 +469,16 @@
       "source": "./images/mountain_4.png",
       "type": "IMAGE",
       "size": 48607
+    },
+    {
+      "source": "./images/movie_1.png",
+      "type": "IMAGE",
+      "size": 13755
+    },
+    {
+      "source": "./images/movie_2.png",
+      "type": "IMAGE",
+      "size": 16033
     },
     {
       "source": "./images/nav_bike.png",
@@ -486,6 +531,36 @@
       "size": 151792
     },
     {
+      "source": "./images/pop_0_mall.jpg",
+      "type": "IMAGE",
+      "size": 45927
+    },
+    {
+      "source": "./images/pop_0_school.jpg",
+      "type": "IMAGE",
+      "size": 76063
+    },
+    {
+      "source": "./images/pop_0_stadium.jpg",
+      "type": "IMAGE",
+      "size": 51652
+    },
+    {
+      "source": "./images/pop_1_mall.jpg",
+      "type": "IMAGE",
+      "size": 67430
+    },
+    {
+      "source": "./images/pop_1_school.jpg",
+      "type": "IMAGE",
+      "size": 82972
+    },
+    {
+      "source": "./images/pop_1_stadium.jpg",
+      "type": "IMAGE",
+      "size": 76577
+    },
+    {
       "source": "./images/river.png",
       "type": "IMAGE",
       "size": 18042
@@ -536,19 +611,64 @@
       "size": 42171
     },
     {
+      "source": "./images/select_man_1.png",
+      "type": "IMAGE",
+      "size": 17774
+    },
+    {
+      "source": "./images/select_man_2.png",
+      "type": "IMAGE",
+      "size": 17687
+    },
+    {
       "source": "./images/select_talk_1.png",
       "type": "IMAGE",
-      "size": 25442
+      "size": 6705
     },
     {
       "source": "./images/select_talk_2.png",
       "type": "IMAGE",
-      "size": 26911
+      "size": 7950
     },
     {
       "source": "./images/select_title.png",
       "type": "IMAGE",
       "size": 15660
+    },
+    {
+      "source": "./images/share.jpg",
+      "type": "IMAGE",
+      "size": 811913
+    },
+    {
+      "source": "./images/title_0_mall.png",
+      "type": "IMAGE",
+      "size": 87511
+    },
+    {
+      "source": "./images/title_0_school.png",
+      "type": "IMAGE",
+      "size": 88588
+    },
+    {
+      "source": "./images/title_0_stadium.png",
+      "type": "IMAGE",
+      "size": 87907
+    },
+    {
+      "source": "./images/title_1_mall.png",
+      "type": "IMAGE",
+      "size": 106513
+    },
+    {
+      "source": "./images/title_1_school.png",
+      "type": "IMAGE",
+      "size": 107195
+    },
+    {
+      "source": "./images/title_1_stadium.png",
+      "type": "IMAGE",
+      "size": 106385
     }
   ]
 }

@@ -148,6 +148,7 @@ header nav {
   height: calc(100% - 40px);
   padding: 20px 30px;
   background: #efefef;
+  overflow: auto;
   -webkit-transition: left 0.4s ease-out;
   transition: left 0.4s ease-out;
 }
@@ -641,6 +642,16 @@ header nav .btn-change-color .text-icon {
   width: 10.2%;
   z-index: 30;
 }
+.main .map .city .scale-container .building-cinemas .movie {
+  position: absolute;
+  left: 27.2%;
+  top: 23%;
+  width: 25.6%;
+}
+.main .map .city .scale-container .building-cinemas .movie-2 {
+  -webkit-animation: movie 3s infinite;
+          animation: movie 3s infinite;
+}
 .main .map .city .scale-container .building-gas-station {
   position: absolute;
   left: 64.3%;
@@ -704,12 +715,16 @@ header nav .btn-change-color .text-icon {
   left: 37%;
   top: 2%;
   width: 25%;
+  -webkit-animation: upDown 2s 2s infinite alternate;
+          animation: upDown 2s 2s infinite alternate;
 }
 .main .map .city .scale-container .building-center .building-center-balloon-2 {
   position: absolute;
   left: 60%;
   top: 23%;
   width: 25%;
+  -webkit-animation: upDown 3s 2.5s infinite alternate;
+          animation: upDown 3s 2.5s infinite alternate;
 }
 .main .map .city .scale-container .building-center .building-center-house {
   position: absolute;
@@ -731,65 +746,65 @@ header nav .btn-change-color .text-icon {
 }
 .main .map .city .scale-container .bike-road-1 {
   position: absolute;
-  left: 40.6%;
+  left: 40.8%;
   top: 67%;
-  width: 1.8%;
+  width: 2.2%;
   z-index: 70;
 }
 .main .map .city .scale-container .bike-road-2 {
   position: absolute;
-  left: 43.5%;
+  left: 43.1%;
   top: 69%;
-  width: 2%;
+  width: 2.4%;
   z-index: 66;
 }
 .main .map .city .scale-container .bike-road-3 {
   position: absolute;
-  left: 61.5%;
+  left: 61.9%;
   top: 45.5%;
-  width: 2%;
+  width: 2.4%;
   z-index: 35;
 }
 .main .map .city .scale-container .bike-road-4 {
   position: absolute;
-  left: 55.5%;
+  left: 55.1%;
   top: 36.5%;
-  width: 2%;
+  width: 2.4%;
   z-index: 25;
 }
 .main .map .city .scale-container .bike-road-5 {
   position: absolute;
-  left: 61.8%;
+  left: 62.2%;
   top: 28%;
-  width: 2%;
+  width: 2.4%;
   z-index: 25;
 }
 .main .map .city .scale-container .bike-road-6 {
   position: absolute;
-  left: 59.3%;
-  top: 26%;
-  width: 1.8%;
+  left: 58.8%;
+  top: 25.8%;
+  width: 2.2%;
   z-index: 25;
 }
 .main .map .city .scale-container .bike-road-7 {
   position: absolute;
-  left: 51.8%;
+  left: 52.2%;
   top: 33.5%;
-  width: 2%;
+  width: 2.4%;
   z-index: 25;
 }
 .main .map .city .scale-container .bike-road-8 {
   position: absolute;
-  left: 48.9%;
-  top: 31.9%;
-  width: 1.8%;
+  left: 48.5%;
+  top: 31.5%;
+  width: 2.2%;
   z-index: 25;
 }
 .main .map .city .scale-container .bike-road-9 {
   position: absolute;
-  left: 31%;
+  left: 31.2%;
   top: 55.2%;
-  width: 1.8%;
+  width: 2.2%;
   z-index: 70;
 }
 .main .map .city .scale-container .car-l {
@@ -820,6 +835,78 @@ header nav .btn-change-color .text-icon {
   width: 3.6%;
   z-index: 55;
 }
+.main .map .city .scale-container .people-1 {
+  position: absolute;
+  left: 33%;
+  top: 40.5%;
+  width: 1.2%;
+  z-index: 60;
+  -webkit-animation: peopleRightTop 1s 4s infinite alternate;
+          animation: peopleRightTop 1s 4s infinite alternate;
+}
+.main .map .city .scale-container .people-2 {
+  position: absolute;
+  left: 39.4%;
+  top: 41.5%;
+  width: 0.6%;
+  z-index: 20;
+  -webkit-animation: peopleLeft 1s 4s infinite alternate;
+          animation: peopleLeft 1s 4s infinite alternate;
+}
+.main .map .city .scale-container .people-3 {
+  position: absolute;
+  left: 52.4%;
+  top: 24%;
+  width: 1%;
+  z-index: 60;
+  -webkit-animation: peopleRightBottom 1s 4s infinite alternate;
+          animation: peopleRightBottom 1s 4s infinite alternate;
+}
+.main .map .city .scale-container .people-4 {
+  position: absolute;
+  left: 58.4%;
+  top: 39.5%;
+  width: 0.8%;
+  z-index: 20;
+  -webkit-animation: peopleLeftBottom 1s 4s infinite alternate;
+          animation: peopleLeftBottom 1s 4s infinite alternate;
+}
+.main .map .city .scale-container .people-5 {
+  position: absolute;
+  left: 62.4%;
+  top: 42%;
+  width: 0.6%;
+  z-index: 60;
+  -webkit-animation: peopleLeftTop 1s 4s infinite alternate;
+          animation: peopleLeftTop 1s 4s infinite alternate;
+}
+.main .map .city .scale-container .people-6 {
+  position: absolute;
+  left: 54.4%;
+  top: 50%;
+  width: 1.25%;
+  z-index: 60;
+  -webkit-animation: peopleRightTop 1s 4s infinite alternate;
+          animation: peopleRightTop 1s 4s infinite alternate;
+}
+.main .map .city .scale-container .people-7 {
+  position: absolute;
+  left: 50.2%;
+  top: 51.4%;
+  width: 0.6%;
+  z-index: 60;
+  -webkit-animation: peopleTop 1s 4s infinite alternate;
+          animation: peopleTop 1s 4s infinite alternate;
+}
+.main .map .city .scale-container .people-8 {
+  position: absolute;
+  left: 49.2%;
+  top: 43.4%;
+  width: 0.8%;
+  z-index: 60;
+  -webkit-animation: peopleLeftBottom 1s 4s infinite alternate;
+          animation: peopleLeftBottom 1s 4s infinite alternate;
+}
 .main .map .city .scale-container .flag-main {
   display: block;
   position: absolute;
@@ -849,42 +936,28 @@ header nav .btn-change-color .text-icon {
   padding-bottom: 198.42%;
   background: url(../images/flag_main_2.png) no-repeat center center;
   background-size: contain;
+  opacity: 0;
+  -webkit-animation: fade 0.3s 0s infinite;
+          animation: fade 0.3s 0s infinite;
 }
 .main .map .city .scale-container .flag {
   display: block;
   position: absolute;
   left: 50%;
   top: 50%;
-  width: 1.6%;
+  width: 1.4%;
   z-index: 90;
   cursor: pointer;
   -webkit-animation: upDown 1s 4s infinite alternate;
           animation: upDown 1s 4s infinite alternate;
 }
-.main .map .city .scale-container .flag::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  display: block;
-  width: 100%;
-  padding-bottom: 132.55%;
-  background: url(../images/flag_halo.png) no-repeat center center;
-  background-size: contain;
-  opacity: 0;
-  -webkit-transition: opacity 0.3s;
-  transition: opacity 0.3s;
-}
 .main .map .city .scale-container .flag::after {
   content: "";
   display: block;
-  width: 100%;
-  padding-bottom: 132.55%;
-  background: url(../images/flag.png) no-repeat center center;
-  background-size: contain;
-}
-.main .map .city .scale-container .flag:hover::before {
-  opacity: 1;
+  width: 140%;
+  padding-bottom: 262.55%;
+  background: url(../images/flag.png) no-repeat center top;
+  background-size: 70% auto;
 }
 .main .map .city .scale-container .flag-1 {
   left: 37.4%;
@@ -934,41 +1007,45 @@ header nav .btn-change-color .text-icon {
   padding-top: 96.72%;
   background-size: 100% auto;
 }
-.main .map .city .scale-container .popup-good-home .man-1 {
+.main .map .city .scale-container .popup-good-home .man {
   opacity: 0;
   visibility: hidden;
+}
+.main .map .city .scale-container .popup-good-home .man .head {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-animation: rotateHead 2s infinite;
+          animation: rotateHead 2s infinite;
+}
+.main .map .city .scale-container .popup-good-home .man-1 {
   position: absolute;
   left: 19%;
   top: 34%;
   width: 23%;
 }
 .main .map .city .scale-container .popup-good-home .man-2 {
-  opacity: 0;
-  visibility: hidden;
   position: absolute;
   left: 54%;
   top: 35%;
   width: 24%;
 }
 .main .map .city .scale-container .popup-good-home .man-3 {
-  opacity: 0;
-  visibility: hidden;
   position: absolute;
   left: 35%;
   top: 48%;
   width: 24%;
 }
 .main .map .city .scale-container .popup-good-home .man-4 {
-  opacity: 0;
-  visibility: hidden;
   position: absolute;
   left: 0%;
   top: 41%;
   width: 23%;
 }
 .main .map .city .scale-container .popup-good-home .man-5 {
-  opacity: 0;
-  visibility: hidden;
   position: absolute;
   left: 73%;
   top: 49%;
@@ -986,10 +1063,15 @@ header nav .btn-change-color .text-icon {
   opacity: 0;
   visibility: hidden;
   position: absolute;
-  left: 88%;
-  top: 0%;
-  width: 12%;
+  left: 92%;
+  top: 6%;
+  width: 15%;
   cursor: pointer;
+  -webkit-transition: width 0.3s ease-out;
+  transition: width 0.3s ease-out;
+}
+.main .map .city .scale-container .popup-good-home .btn-close:hover {
+  width: 16%;
 }
 .main .map .city .scale-container .popup-basic {
   opacity: 0;
@@ -1024,6 +1106,7 @@ header nav .btn-change-color .text-icon {
 .main .map .city .scale-container .popup-basic .pic {
   display: none;
   margin-bottom: 1rem;
+  margin-top: -3rem;
 }
 .main .map .city .scale-container .popup-basic .des {
   display: none;
@@ -1042,16 +1125,6 @@ header nav .btn-change-color .text-icon {
   padding: 8px 60px;
   font-weight: bold;
   cursor: pointer;
-}
-.main .map .city .dot {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 20px;
-  height: 20px;
-  background: hotpink;
 }
 
 .select-bike {
@@ -1097,6 +1170,7 @@ header nav .btn-change-color .text-icon {
       -ms-flex-align: center;
           align-items: center;
   padding: 0 0.5rem;
+  overflow: hidden;
 }
 @media (min-width: 992px) {
   .select-bike .select-container-head {
@@ -1106,12 +1180,42 @@ header nav .btn-change-color .text-icon {
 .select-bike .select-container-head .title {
   margin: 1rem;
 }
-.select-bike .select-container-head .talk {
+.select-bike .select-container-head .man-talk {
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 60%;
+          flex: 1 0 60%;
   -ms-flex-item-align: end;
       align-self: flex-end;
+  background: hotpink;
 }
-.select-bike .select-container-head .talk-2 {
-  display: none;
+@media (min-width: 992px) {
+  .select-bike .select-container-head .man-talk {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto;
+  }
+}
+.select-bike .select-container-head .man-talk .talk {
+  position: absolute;
+  left: 0;
+  bottom: 2%;
+  width: 70%;
+  opacity: 0;
+}
+.select-bike .select-container-head .man-talk .talk-1 {
+  left: 25%;
+}
+.select-bike .select-container-head .man-talk .man {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 20%;
+  opacity: 0;
+}
+.select-bike .select-container-head .man-talk .man-2 {
+  opacity: 0;
+  left: 72%;
 }
 .select-bike .select-container-step {
   display: none;
@@ -1178,70 +1282,113 @@ header nav .btn-change-color .text-icon {
   top: 0;
   width: 100%;
   height: 100%;
-  background: #333;
+  background: #fff;
   z-index: 900;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.loading .icon {
+  width: 120px;
 }
 
-.grid {
-  position: fixed;
-  left: 0;
-  top: 40px;
-  width: 100%;
-  height: calc(100% - 40px);
-  z-index: 200;
-  pointer-events: none;
-}
-@media (min-width: 992px) {
-  .grid {
-    top: 80px;
-    height: calc(100% - 80px);
+@-webkit-keyframes peopleLeft {
+  100% {
+    -webkit-transform: translateX(-2px);
+            transform: translateX(-2px);
   }
 }
-.grid .vertical, .grid .horizontal {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-.grid .vertical {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.grid .vertical .line {
-  width: 1px;
-  height: 100%;
-  background: green;
-}
-.grid .horizontal {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.grid .horizontal .line {
-  width: 100%;
-  height: 1px;
-  background: green;
-}
 
+@keyframes peopleLeft {
+  100% {
+    -webkit-transform: translateX(-2px);
+            transform: translateX(-2px);
+  }
+}
+@-webkit-keyframes peopleRight {
+  100% {
+    -webkit-transform: translateX(2px);
+            transform: translateX(2px);
+  }
+}
+@keyframes peopleRight {
+  100% {
+    -webkit-transform: translateX(2px);
+            transform: translateX(2px);
+  }
+}
+@-webkit-keyframes peopleRightTop {
+  100% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+  }
+}
+@keyframes peopleRightTop {
+  100% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+  }
+}
+@-webkit-keyframes peopleRightBottom {
+  100% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px);
+  }
+}
+@keyframes peopleRightBottom {
+  100% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px);
+  }
+}
+@-webkit-keyframes peopleLeftBottom {
+  100% {
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px);
+  }
+}
+@keyframes peopleLeftBottom {
+  100% {
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px);
+  }
+}
+@-webkit-keyframes peopleLeftTop {
+  100% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+}
+@keyframes peopleLeftTop {
+  100% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+}
+@-webkit-keyframes peopleTop {
+  100% {
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
+  }
+}
+@keyframes peopleTop {
+  100% {
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
+  }
+}
 @-webkit-keyframes upDown {
   100% {
     -webkit-transform: translateY(-12px);
             transform: translateY(-12px);
   }
 }
-
 @keyframes upDown {
   100% {
     -webkit-transform: translateY(-12px);
@@ -1262,5 +1409,89 @@ header nav .btn-change-color .text-icon {
   }
   100% {
     opacity: 1;
+  }
+}
+@-webkit-keyframes rotateHead {
+  20% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  40% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  60% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  80% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+@keyframes rotateHead {
+  20% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  40% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  60% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  80% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes movie {
+  0% {
+    opacity: 0;
+  }
+  19% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  81% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes movie {
+  0% {
+    opacity: 0;
+  }
+  19% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  81% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
   }
 }

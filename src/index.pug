@@ -1,31 +1,41 @@
+- let webTitle = "好加在城市 | YAMAHA台灣山葉機車"
+
 doctype html
 html(lang="zh-tw")
   head
     meta(charset="UTF-8")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    title Document
-    link(type="text/css" rel="stylesheet" href="css/index.css")
+    meta(property="og:site_name", content=`${webTitle}`)
+    meta(property="og:url", content="https://www.yamahacity.com.tw")
+    meta(property="og:type", content="website")
+    meta(property="og:title", content=`${webTitle}`)
+    meta(property="og:description", content="歡迎來到郝家在社區，一起陪媽媽創造美好回憶，參加YAMAHA母親節活動，就有機會讓媽媽把JOG騎回家！")
+    meta(property="og:image", content="https://www.yamahacity.com.tw/images/share.jpg")
+    title=webTitle
+    link(rel="shortcut icon", sizes="16x16", href="../images/favicon.ico")
+    link(rel="apple-touch-icon", sizes="1024x1024", href="../images/apple-touch-icon.png")
+    link(type="text/css", rel="stylesheet", href="css/index.css")
   body 
     header 
-      a.logo(href="#")
+      a.logo(href="https://www.yamaha-motor.com.tw/" target="_blank")
         img(src="images/logo.png", alt="Yamaha")
       a.menu(href="#")
       nav 
-        a.title(href="https://www.yamaha-motor.com.tw/", target="_blank")
+        a.title(href="campaign/")
           .pic 
             img(src="images/nav_icon.png", alt="")
           .text 
             .text-sub Campaign
             .text-main 母親節照片募集活動
         .navigate
-          a(href="page/index.html")
+          a(href="showroom/")
             .pic 
               img(src="images/nav_icon_1.png", alt="")
             .text 
               .text-sub YAMAHA YSP
               .text-main 車款介紹
-          a(href="https://www.yamaha-motor.com.tw/", target="_blank")
+          a(href="cinema/")
             .pic 
               img(src="images/nav_icon_2.png", alt="")
             .text 
@@ -57,7 +67,7 @@ html(lang="zh-tw")
               .text-main 開開心心上學去！
         a.btn-change-color(href="#")
           .pic 
-            img(src="images/nav_bike.png", alt="")
+            img(src="images/bike_0_0_t.png", alt="")
           .text 
             .text-main 車款車色選擇
             .text-icon 
@@ -230,6 +240,10 @@ html(lang="zh-tw")
               //- 電影院
               .building-cinemas
                 img(src="images/building_cinemas.png", alt="電影院")
+                .movie.movie-1 
+                  img(src="images/movie_1.png", alt="")
+                .movie.movie-2 
+                  img(src="images/movie_2.png", alt="")
               //- 郝家
               .building-good-home
                 img(src="images/building_good_home.png", alt="郝家")
@@ -245,6 +259,30 @@ html(lang="zh-tw")
               //- 老街
               .building-street
                 img(src="images/building_street.png", alt="老街")
+              //- 人1
+              .people-1
+                img(src="images/people_1.png", alt="人")
+              //- 人2
+              .people-2
+                img(src="images/people_2.png", alt="人")
+              //- 人3
+              .people-3
+                img(src="images/people_3.png", alt="人")
+              //- 人4
+              .people-4
+                img(src="images/people_4.png", alt="人")
+              //- 人5
+              .people-5
+                img(src="images/people_5.png", alt="人")
+              //- 人6
+              .people-6
+                img(src="images/people_6.png", alt="人")
+              //- 人7
+              .people-7
+                img(src="images/people_7.png", alt="人")
+              //- 人8
+              .people-8
+                img(src="images/people_8.png", alt="人")
 
               //- 旗標
               a.flag.flag-1(href="#" data-popup="school")
@@ -259,33 +297,49 @@ html(lang="zh-tw")
               .popup
                 .popup-good-home 
                   .group
-                    .man-1 
+                    .man.man-1 
                       img(src="images/man_1.png", alt="")
-                    .man-2 
+                      .head 
+                        img(src="images/man_head_1.png", alt="")
+                    .man.man-2 
                       img(src="images/man_2.png", alt="")
-                    .man-3 
+                      .head 
+                        img(src="images/man_head_2.png", alt="")
+                    .man.man-3 
                       img(src="images/man_3.png", alt="")
-                    .man-4 
+                      .head 
+                        img(src="images/man_head_3.png", alt="")
+                    .man.man-4 
                       img(src="images/man_4.png", alt="")
-                    .man-5 
+                      .head 
+                        img(src="images/man_head_4.png", alt="")
+                    .man.man-5 
                       img(src="images/man_5.png", alt="")
+                      .head 
+                        img(src="images/man_head_5.png", alt="")
                     .man-talk 
                       img(src="images/man_talk.png", alt="")
                     .btn-close 
                       img(src="images/icon_close.png", alt="")
                 .popup-basic
                   .pic.pic-0-school 
-                    img(src="images/pic.png", alt="") 
+                    img(src="images/title_0_school.png", alt="") 
+                    img(src="images/pop_0_school.jpg", alt="") 
                   .pic.pic-0-mall 
-                    img(src="images/pic.png", alt="") 
+                    img(src="images/title_0_mall.png", alt="") 
+                    img(src="images/pop_0_mall.jpg", alt="") 
                   .pic.pic-0-stadium 
-                    img(src="images/pic.png", alt="") 
+                    img(src="images/title_0_stadium.png", alt="") 
+                    img(src="images/pop_0_stadium.jpg", alt="") 
                   .pic.pic-1-school 
-                    img(src="images/pic.png", alt="") 
+                    img(src="images/title_1_school.png", alt="")
+                    img(src="images/pop_1_school.jpg", alt="") 
                   .pic.pic-1-mall 
-                    img(src="images/pic.png", alt="") 
+                    img(src="images/title_1_mall.png", alt="")
+                    img(src="images/pop_1_mall.jpg", alt="") 
                   .pic.pic-1-stadium 
-                    img(src="images/pic.png", alt="") 
+                    img(src="images/title_1_stadium.png", alt="")
+                    img(src="images/pop_1_stadium.jpg", alt="") 
                   p.des.des-0-school 送完郝嘉在去上學後，媽媽自言自語到：「希望郝嘉在長大後也能腳踏實地做人，和這台車一樣！」 
                   p.des.des-0-mall 阿公拿著裝滿滿的購物袋從賣場走出來一邊和阿嬤說到：「好加在JOG的置腳空間很夠，這樣就可以輕鬆放啦！」
                   p.des.des-0-stadium 媽媽輕輕鬆鬆立起中柱，帥氣停車，心中竊喜：
@@ -300,16 +354,19 @@ html(lang="zh-tw")
                   p.des.des-1-stadium 當爸爸要抵達時，爸爸載著郝嘉在緩緩煞停「好加在有UBS岔車系統，好穩！」
                   .btn-close 關閉
 
-
     .select-bike
       .select-container 
         .select-container-head 
           .title 
             img(src="images/select_title.png", alt="歡迎來到郝家在社區")
-          .talk
-            .talk-1 
+          .man-talk
+            .man.man-1 
+              img(src="images/select_man_1.png", alt="") 
+            .man.man-2 
+              img(src="images/select_man_2.png", alt="") 
+            .talk.talk-1 
               img(src="images/select_talk_1.png", alt="歡迎來到郝家在社區！一起陪媽媽創造美好回憶！")
-            .talk-2 
+            .talk.talk-2 
               img(src="images/select_talk_2.png", alt="參加YAMAHA母親節活動！就有機會讓媽媽把JOG騎回家！")
         .select-container-step.step-1
           p 請選擇您的愛車！
@@ -338,20 +395,17 @@ html(lang="zh-tw")
           a(href="#") 繼續
 
     .loading
-    //- .grid 
-      .vertical 
-        .line 
-        .line 
-        .line 
-        //- .line
-      .horizontal
-        .line 
-        .line 
-        .line 
-        //- .line
+      .icon
+        img(src="images/loading.gif", alt="loading")
 
     script(src="js/vendor/jquery.min.js")
     script(src="js/vendor/jquery.html5Loader.min.js")
     script(src="js/vendor/jquery.scrollTo.min.js")
     script(src="js/vendor/TweenMax.min.js")
     script(src="js/index.js")
+    script(async, src="https://www.googletagmanager.com/gtag/js?id=G-WBDLK3J5EV") 
+    script. 
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-WBDLK3J5EV');
