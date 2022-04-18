@@ -261,6 +261,11 @@
       "size": 2290428
     },
     {
+      "source": "./images/cloud.png",
+      "type": "IMAGE",
+      "size": 46808
+    },
+    {
       "source": "./images/farm_1.png",
       "type": "IMAGE",
       "size": 36194
@@ -524,6 +529,46 @@
       "source": "./images/nav_icon_change.png",
       "type": "IMAGE",
       "size": 1358
+    },
+    {
+      "source": "./images/people_1.png",
+      "type": "IMAGE",
+      "size": 5074
+    },
+    {
+      "source": "./images/people_2.png",
+      "type": "IMAGE",
+      "size": 3204
+    },
+    {
+      "source": "./images/people_3.png",
+      "type": "IMAGE",
+      "size": 5556
+    },
+    {
+      "source": "./images/people_4.png",
+      "type": "IMAGE",
+      "size": 4534
+    },
+    {
+      "source": "./images/people_5.png",
+      "type": "IMAGE",
+      "size": 3208
+    },
+    {
+      "source": "./images/people_6.png",
+      "type": "IMAGE",
+      "size": 4846
+    },
+    {
+      "source": "./images/people_7.png",
+      "type": "IMAGE",
+      "size": 2942
+    },
+    {
+      "source": "./images/people_8.png",
+      "type": "IMAGE",
+      "size": 4534
     },
     {
       "source": "./images/pic.png",

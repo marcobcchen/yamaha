@@ -184,9 +184,15 @@ header nav .title {
 }
 header nav .title .pic {
   position: absolute;
-  left: 10px;
+  left: -20px;
   bottom: -4px;
-  width: 122px;
+  width: 110px;
+}
+@media (min-width: 321px) {
+  header nav .title .pic {
+    left: 10px;
+    width: 122px;
+  }
 }
 @media (min-width: 992px) {
   header nav .title .pic {
@@ -212,7 +218,12 @@ header nav .title .text-main {
   letter-spacing: 2px;
   background: #e60012;
   padding-bottom: 2px;
-  margin-left: 70px;
+  margin-left: 40px;
+}
+@media (min-width: 321px) {
+  header nav .title .text-main {
+    margin-left: 70px;
+  }
 }
 @media (min-width: 992px) {
   header nav .title .text-main {
@@ -271,7 +282,12 @@ header nav .navigate a .text-main {
   }
 }
 header nav .navigate a:nth-child(even) .pic {
-  margin-left: 20%;
+  margin-left: 10%;
+}
+@media (min-width: 321px) {
+  header nav .navigate a:nth-child(even) .pic {
+    margin-left: 20%;
+  }
 }
 @media (min-width: 992px) {
   header nav .navigate a:nth-child(even) .pic {
@@ -279,7 +295,12 @@ header nav .navigate a:nth-child(even) .pic {
   }
 }
 header nav .navigate a:nth-child(odd) .pic {
-  margin-left: 10%;
+  margin-left: 0%;
+}
+@media (min-width: 321px) {
+  header nav .navigate a:nth-child(odd) .pic {
+    margin-left: 10%;
+  }
 }
 @media (min-width: 992px) {
   header nav .navigate a:nth-child(odd) .pic {
@@ -835,14 +856,16 @@ header nav .btn-change-color .text-icon {
   width: 3.6%;
   z-index: 55;
 }
+.main .map .city .scale-container .people {
+  visibility: hidden;
+  opacity: 0;
+}
 .main .map .city .scale-container .people-1 {
   position: absolute;
   left: 33%;
   top: 40.5%;
   width: 1.2%;
   z-index: 60;
-  -webkit-animation: peopleRightTop 1s 4s infinite alternate;
-          animation: peopleRightTop 1s 4s infinite alternate;
 }
 .main .map .city .scale-container .people-2 {
   position: absolute;
@@ -850,8 +873,6 @@ header nav .btn-change-color .text-icon {
   top: 41.5%;
   width: 0.6%;
   z-index: 20;
-  -webkit-animation: peopleLeft 1s 4s infinite alternate;
-          animation: peopleLeft 1s 4s infinite alternate;
 }
 .main .map .city .scale-container .people-3 {
   position: absolute;
@@ -859,8 +880,6 @@ header nav .btn-change-color .text-icon {
   top: 24%;
   width: 1%;
   z-index: 60;
-  -webkit-animation: peopleRightBottom 1s 4s infinite alternate;
-          animation: peopleRightBottom 1s 4s infinite alternate;
 }
 .main .map .city .scale-container .people-4 {
   position: absolute;
@@ -868,8 +887,6 @@ header nav .btn-change-color .text-icon {
   top: 39.5%;
   width: 0.8%;
   z-index: 20;
-  -webkit-animation: peopleLeftBottom 1s 4s infinite alternate;
-          animation: peopleLeftBottom 1s 4s infinite alternate;
 }
 .main .map .city .scale-container .people-5 {
   position: absolute;
@@ -877,8 +894,6 @@ header nav .btn-change-color .text-icon {
   top: 42%;
   width: 0.6%;
   z-index: 60;
-  -webkit-animation: peopleLeftTop 1s 4s infinite alternate;
-          animation: peopleLeftTop 1s 4s infinite alternate;
 }
 .main .map .city .scale-container .people-6 {
   position: absolute;
@@ -886,8 +901,6 @@ header nav .btn-change-color .text-icon {
   top: 50%;
   width: 1.25%;
   z-index: 60;
-  -webkit-animation: peopleRightTop 1s 4s infinite alternate;
-          animation: peopleRightTop 1s 4s infinite alternate;
 }
 .main .map .city .scale-container .people-7 {
   position: absolute;
@@ -895,8 +908,6 @@ header nav .btn-change-color .text-icon {
   top: 51.4%;
   width: 0.6%;
   z-index: 60;
-  -webkit-animation: peopleTop 1s 4s infinite alternate;
-          animation: peopleTop 1s 4s infinite alternate;
 }
 .main .map .city .scale-container .people-8 {
   position: absolute;
@@ -904,8 +915,6 @@ header nav .btn-change-color .text-icon {
   top: 43.4%;
   width: 0.8%;
   z-index: 60;
-  -webkit-animation: peopleLeftBottom 1s 4s infinite alternate;
-          animation: peopleLeftBottom 1s 4s infinite alternate;
 }
 .main .map .city .scale-container .flag-main {
   display: block;
@@ -1103,6 +1112,24 @@ header nav .btn-change-color .text-icon {
     max-width: 350px;
   }
 }
+@media (min-width: 992px) {
+  .main .map .city .scale-container .popup-basic.school {
+    left: 48%;
+    top: 36%;
+  }
+}
+@media (min-width: 992px) {
+  .main .map .city .scale-container .popup-basic.mall {
+    left: 53%;
+    top: 54%;
+  }
+}
+@media (min-width: 992px) {
+  .main .map .city .scale-container .popup-basic.stadium {
+    left: 64%;
+    top: 34%;
+  }
+}
 .main .map .city .scale-container .popup-basic .pic {
   display: none;
   margin-bottom: 1rem;
@@ -1125,6 +1152,86 @@ header nav .btn-change-color .text-icon {
   padding: 8px 60px;
   font-weight: bold;
   cursor: pointer;
+}
+
+.cloud-container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.cloud-1 {
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  width: 18%;
+}
+@media (min-width: 992px) {
+  .cloud-1 {
+    width: 12%;
+  }
+}
+
+.cloud-3 {
+  position: absolute;
+  left: 80%;
+  top: 82%;
+  width: 18%;
+}
+@media (min-width: 992px) {
+  .cloud-3 {
+    width: 12%;
+  }
+}
+
+.cloud-6 {
+  position: absolute;
+  left: 80%;
+  top: 22%;
+  width: 18%;
+}
+@media (min-width: 992px) {
+  .cloud-6 {
+    width: 12%;
+  }
+}
+
+.cloud-2 {
+  position: absolute;
+  left: 28%;
+  top: 24%;
+  width: 12%;
+}
+@media (min-width: 992px) {
+  .cloud-2 {
+    width: 8%;
+  }
+}
+
+.cloud-4 {
+  position: absolute;
+  left: 82%;
+  top: 90%;
+  width: 12%;
+}
+@media (min-width: 992px) {
+  .cloud-4 {
+    width: 8%;
+  }
+}
+
+.cloud-5 {
+  position: absolute;
+  left: 32%;
+  top: 80%;
+  width: 12%;
+}
+@media (min-width: 992px) {
+  .cloud-5 {
+    width: 8%;
+  }
 }
 
 .select-bike {
@@ -1282,7 +1389,7 @@ header nav .btn-change-color .text-icon {
   top: 0;
   width: 100%;
   height: 100%;
-  background: #fff;
+  background: #cbd366;
   z-index: 900;
   display: -webkit-box;
   display: -ms-flexbox;

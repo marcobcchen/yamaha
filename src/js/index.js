@@ -39,6 +39,7 @@ $(function(){
     initCarAnimate();
     initBusAnimate();
     initCityAnimate();
+    initCloudAnimate();
     initPopup();
   }
 
@@ -134,6 +135,9 @@ $(function(){
       }else{
         scrollToCenter();
 
+        $('.popup-basic').removeClass('school mall stadium');
+        $('.popup-basic').addClass(popup);
+
         $('.popup-basic .pic').css('display', 'none');
         $('.popup-basic .pic-'+lsBikeType+'-'+popup).css('display', 'block');
 
@@ -161,6 +165,7 @@ $(function(){
     if(isFirstTime){
       isFirstTime = false;
 
+      playCloudAnimate();
       playCityAnimate();
       playBikeAnimate();
     }
@@ -430,9 +435,28 @@ $(function(){
     TweenMax.to($('.building-street'), 0.6, {autoAlpha: 1, y: 0, ease: Back.easeOut, delay: 0.9});
     TweenMax.to($('.building-good-home'), 0.6, {autoAlpha: 1, y: 0, ease: Back.easeOut, delay: 1});
     TweenMax.to($('.building-store'), 0.6, {autoAlpha: 1, y: 0, ease: Back.easeOut, delay: 1.1});
+    
+    TweenMax.to($('.people'), 0.6, {autoAlpha: 1, ease: Back.easeOut, delay: 1.2});
 
     TweenMax.to($('.flag'), 0.6, {autoAlpha: 1, y: 0, ease: Back.easeOut, delay: 1.3});
     TweenMax.to($('.flag-main'), 0.6, {autoAlpha: 1, y: 0, ease: Back.easeOut, delay: 1.5});
   }
 
+  function initCloudAnimate(){
+    TweenMax.set($('.cloud-1'), {x: 2000, y: 1200});
+    TweenMax.set($('.cloud-2'), {x: 2000, y: 1200});
+    TweenMax.set($('.cloud-3'), {x: 2000, y: 1200});
+    TweenMax.set($('.cloud-4'), {x: 2000, y: 1200});
+    TweenMax.set($('.cloud-5'), {x: 2000, y: 1200});
+    TweenMax.set($('.cloud-6'), {x: 2000, y: 1200});
+  }
+
+  function playCloudAnimate(){
+    TweenMax.fromTo($('.cloud-1'), 50, {x: 2000, y: 1200}, {x: -2000, y: -1200, repeat: -1, delay: 0.5})
+    TweenMax.fromTo($('.cloud-2'), 60, {x: 2000, y: 1200}, {x: -2000, y: -1200, repeat: -1, delay: 1})
+    TweenMax.fromTo($('.cloud-3'), 60, {x: 2000, y: 1200}, {x: -2000, y: -1200, repeat: -1, delay: 1.5})
+    TweenMax.fromTo($('.cloud-4'), 70, {x: 2000, y: 1200}, {x: -2000, y: -1200, repeat: -1, delay: 1})
+    TweenMax.fromTo($('.cloud-5'), 60, {x: 2000, y: 1200}, {x: -2000, y: -1200, repeat: -1, delay: 30})
+    TweenMax.fromTo($('.cloud-6'), 70, {x: 2000, y: 1200}, {x: -2000, y: -1200, repeat: -1, delay: 20})
+  }
 });
