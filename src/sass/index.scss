@@ -843,8 +843,8 @@ header{
 
         .bus-r{
           position: absolute;
-          left: 14%;
-          top: 55.8%;
+          left: 10%;
+          top: 60.5%;
           // left: 27%;
           // top: 39.6%;
           width: 3.6%;
@@ -1220,13 +1220,14 @@ header{
   position: fixed;
   width: 100%;
   height: 100%;
+  z-index: 99;
   overflow: hidden;
   pointer-events: none;
 }
 
 .cloud-1{
   position: absolute;
-  left: 20%;
+  left: 0%;
   top: 20%;
   width: 18%;
 
@@ -1237,8 +1238,8 @@ header{
 
 .cloud-3{
   position: absolute;
-  left: 80%;
-  top: 82%;
+  left: 88%;
+  top: 62%;
   width: 18%;
 
   @media (min-width: $media_lg) {
@@ -1259,7 +1260,7 @@ header{
 
 .cloud-2{
   position: absolute;
-  left: 28%;
+  left: 8%;
   top: 24%;
   width: 12%;
 
@@ -1270,8 +1271,8 @@ header{
 
 .cloud-4{
   position: absolute;
-  left: 82%;
-  top: 90%;
+  left: 90%;
+  top: 70%;
   width: 12%;
 
   @media (min-width: $media_lg) {

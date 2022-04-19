@@ -16,44 +16,44 @@
     <link type="text/css" rel="stylesheet" href="css/index.css">
   </head>
   <body> 
-    <header> <a class="logo" href="https://www.yamaha-motor.com.tw/" target="_blank"><img src="images/logo.png" alt="Yamaha"></a><a class="menu" href="#"></a>
-      <nav> <a class="title" href="campaign/">
+    <header> <a class="logo" href="https://www.yamaha-motor.com.tw/" target="_blank" onclick="trackEvent('header', 'logo');"><img src="images/logo.png" alt="Yamaha"></a><a class="menu" href="#"></a>
+      <nav> <a class="title" href="campaign/" onclick="trackEvent('menu', '母親節活動');">
           <div class="pic"> <img src="images/nav_icon.png" alt=""></div>
           <div class="text"> 
             <div class="text-sub">Campaign</div>
             <div class="text-main">母親節照片募集活動</div>
           </div></a>
-        <div class="navigate"><a href="showroom/">
+        <div class="navigate"><a href="showroom/" onclick="trackEvent('menu', '經銷商');">
             <div class="pic"> <img src="images/nav_icon_1.png" alt=""></div>
             <div class="text"> 
               <div class="text-sub">YAMAHA YSP</div>
               <div class="text-main">車款介紹</div>
-            </div></a><a href="cinema/">
+            </div></a><a href="cinema/" onclick="trackEvent('menu', '電影院');">
             <div class="pic"> <img src="images/nav_icon_2.png" alt=""></div>
             <div class="text"> 
               <div class="text-sub">Cinema</div>
               <div class="text-main">本篇影片</div>
-            </div></a><a href="#" data-popup="good_home">
+            </div></a><a href="#" data-popup="good_home" onclick="trackEvent('menu', '郝家');">
             <div class="pic"> <img src="images/nav_icon_3.png" alt=""></div>
             <div class="text"> 
               <div class="text-sub">郝家</div>
               <div class="text-main">郝家在人物簡介</div>
-            </div></a><a href="#" data-popup="stadium">
+            </div></a><a href="#" data-popup="stadium" onclick="trackEvent('menu', '足球場');">
             <div class="pic"> <img src="images/nav_icon_4.png" alt=""></div>
             <div class="text"> 
               <div class="text-sub">Football field</div>
               <div class="text-main">全家一起出去玩！</div>
-            </div></a><a href="#" data-popup="mall">
+            </div></a><a href="#" data-popup="mall" onclick="trackEvent('menu', '購物中心');">
             <div class="pic"> <img src="images/nav_icon_5.png" alt=""></div>
             <div class="text"> 
               <div class="text-sub">Mall</div>
               <div class="text-main">血拚囉！</div>
-            </div></a><a href="#" data-popup="school">
+            </div></a><a href="#" data-popup="school" onclick="trackEvent('menu', '學校');">
             <div class="pic"> <img src="images/nav_icon_6.png" alt=""></div>
             <div class="text"> 
               <div class="text-sub">School</div>
               <div class="text-main">開開心心上學去！</div>
-            </div></a></div><a class="btn-change-color" href="#">
+            </div></a></div><a class="btn-change-color" href="#" onclick="trackEvent('menu', '車款車色選擇');">
           <div class="pic"> <img src="images/bike_0_0_t.png" alt=""></div>
           <div class="text"> 
             <div class="text-main">車款車色選擇</div>
@@ -138,7 +138,15 @@
               <div class="people people-5"><img src="images/people_5.png" alt="人"></div>
               <div class="people people-6"><img src="images/people_6.png" alt="人"></div>
               <div class="people people-7"><img src="images/people_7.png" alt="人"></div>
-              <div class="people people-8"><img src="images/people_8.png" alt="人"></div><a class="flag flag-1" href="#" data-popup="school" id="school"></a><a class="flag flag-2" href="showroom/"></a><a class="flag flag-3" href="#" data-popup="stadium" id="stadium"></a><a class="flag flag-4" href="cinema/"></a><a class="flag flag-5" href="#" data-popup="mall" id="mall"></a><a class="flag flag-6" href="#" data-popup="good_home" id="good_home"></a><a class="flag-main" href="campaign/"></a>
+              <div class="people people-8"><img src="images/people_8.png" alt="人"></div><a class="flag flag-1" href="#" data-popup="school" id="school" onclick="trackEvent('button', '學校');"></a><a class="flag flag-2" href="showroom/" id="showroom" onclick="trackEvent('button', '經銷商');"></a><a class="flag flag-3" href="#" data-popup="stadium" id="stadium" onclick="trackEvent('button', '足球場');"></a><a class="flag flag-4" href="cinema/" id="cinema" onclick="trackEvent('button', '電影院');"></a><a class="flag flag-5" href="#" data-popup="mall" id="mall" onclick="trackEvent('button', '購物中心');"></a><a class="flag flag-6" href="#" data-popup="good_home" id="good_home" onclick="trackEvent('button', '郝家');"></a><a class="flag-main" href="campaign/" id="campaign" onclick="trackEvent('button', '母親節活動');"></a>
+              <div class="cloud-container">
+                <div class="cloud cloud-2"> <img src="images/cloud.png" alt=""></div>
+                <div class="cloud cloud-1"> <img src="images/cloud.png" alt=""></div>
+                <div class="cloud cloud-3"> <img src="images/cloud.png" alt=""></div>
+                <div class="cloud cloud-4"> <img src="images/cloud.png" alt=""></div>
+                <div class="cloud cloud-5"> <img src="images/cloud.png" alt=""></div>
+                <div class="cloud cloud-6"> <img src="images/cloud.png" alt=""></div>
+              </div>
               <div class="popup">
                 <div class="popup-good-home"> 
                   <div class="group">
@@ -184,14 +192,6 @@
         </div>
       </div>
     </div>
-    <div class="cloud-container">
-      <div class="cloud cloud-2"> <img src="images/cloud.png" alt=""></div>
-      <div class="cloud cloud-1"> <img src="images/cloud.png" alt=""></div>
-      <div class="cloud cloud-3"> <img src="images/cloud.png" alt=""></div>
-      <div class="cloud cloud-4"> <img src="images/cloud.png" alt=""></div>
-      <div class="cloud cloud-5"> <img src="images/cloud.png" alt=""></div>
-      <div class="cloud cloud-6"> <img src="images/cloud.png" alt=""></div>
-    </div>
     <div class="select-bike">
       <div class="select-container"> 
         <div class="select-container-head"> 
@@ -206,21 +206,21 @@
         <div class="select-container-step step-1">
           <p>請選擇您的愛車！</p>
           <ul> 
-            <li id="jog"> <img src="images/select_bike_1.png" alt="JOG 125"></li>
-            <li id="ginhow"> <img src="images/select_bike_2.png" alt="勁豪 125"></li>
+            <li id="jog" onclick="trackEvent('button', 'JOG125');"> <img src="images/select_bike_1.png" alt="JOG 125"></li>
+            <li id="ginhow" onclick="trackEvent('button', '勁豪125');"> <img src="images/select_bike_2.png" alt="勁豪 125"></li>
           </ul><a href="#">繼續</a>
         </div>
         <div class="select-container-step step-2">
           <p>請選擇愛車顏色！</p>
           <ul class="color-1"> 
-            <li id="jog-white"> <img src="images/select_color_1_1.png" alt="白色"></li>
-            <li id="jog-purple">  <img src="images/select_color_1_2.png" alt="紫色"></li>
-            <li id="jog-gray">  <img src="images/select_color_1_3.png" alt="灰色"></li>
+            <li id="jog-white" onclick="trackEvent('button', 'JOG-白色');"> <img src="images/select_color_1_1.png" alt="白色"></li>
+            <li id="jog-purple" onclick="trackEvent('button', 'JOG-紫色');">  <img src="images/select_color_1_2.png" alt="紫色"></li>
+            <li id="jog-gray" onclick="trackEvent('button', 'JOG-灰色');">  <img src="images/select_color_1_3.png" alt="灰色"></li>
           </ul>
           <ul class="color-2"> 
-            <li id="ginhow-white"> <img src="images/select_color_2_1.png" alt="藍色"></li>
-            <li id="ginhow-purple"> <img src="images/select_color_2_2.png" alt="黑色"></li>
-            <li id="ginhow-gray"> <img src="images/select_color_2_3.png" alt="灰色"></li>
+            <li id="ginhow-blue" onclick="trackEvent('button', '勁豪-藍色');"> <img src="images/select_color_2_1.png" alt="藍色"></li>
+            <li id="ginhow-black" onclick="trackEvent('button', '勁豪-黑色');"> <img src="images/select_color_2_2.png" alt="黑色"></li>
+            <li id="ginhow-gray" onclick="trackEvent('button', '勁豪-灰色');"> <img src="images/select_color_2_3.png" alt="灰色"></li>
           </ul><a href="#">繼續</a>
         </div>
       </div>
@@ -239,6 +239,10 @@
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-WBDLK3J5EV');
+      
+      function trackEvent(category, label){
+        gtag('event', 'YAMAHA_SP', { 'event_category': category, 'event_label': label });
+      }
     </script>
     <script id="ret-js-template">
       var retUrlPrefix="//a.amnet.tw/tracking/";
