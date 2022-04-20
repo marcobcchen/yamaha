@@ -98,6 +98,8 @@ $(function(){
     $('.menu').on('click', function(e){
       e.preventDefault();
       switchNav();
+      closePopup();
+      closePopupGoodHome();
     });
 
     // $('.logo').on('click', function(e){
@@ -127,9 +129,15 @@ $(function(){
 
     if(popup){
       e.preventDefault();
-      // console.log(popup);
-      $('.popup').toggleClass('open');
+      console.log(popup, $('.popup').hasClass('open'));
 
+      var isOpen = $('.popup').hasClass('open');
+      if(isOpen){
+        $('.popup').removeClass('open');
+      }else{
+        $('.popup').addClass('open');
+      }
+      
       if(popup == "good_home"){
         playPopupGoodHome();
       }else{
@@ -263,14 +271,18 @@ $(function(){
     });
 
     $('.popup-basic .btn-close').on('click', function(){
-        TweenMax.to($('.popup-basic'), 0.5, {scale: 0.5, autoAlpha: 0, ease: Back.easeOut, onComplete: function(){
-        $('.popup').toggleClass('open');
-      }});
+      closePopup();
     });
 
     $('.popup-good-home .btn-close').on('click', function(){
       closePopupGoodHome();
     });
+  }
+
+  function closePopup(){
+    TweenMax.to($('.popup-basic'), 0.5, {scale: 0.5, autoAlpha: 0, ease: Back.easeOut, onComplete: function(){
+      $('.popup').removeClass('open');
+    }});
   }
 
   // play popup good home
