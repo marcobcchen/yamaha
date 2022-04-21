@@ -531,9 +531,19 @@
       "size": 1358
     },
     {
+      "source": "./images/people_1.gif",
+      "type": "IMAGE",
+      "size": 22834
+    },
+    {
       "source": "./images/people_1.png",
       "type": "IMAGE",
       "size": 5074
+    },
+    {
+      "source": "./images/people_2.gif",
+      "type": "IMAGE",
+      "size": 4642
     },
     {
       "source": "./images/people_2.png",
@@ -541,9 +551,19 @@
       "size": 3204
     },
     {
+      "source": "./images/people_3.gif",
+      "type": "IMAGE",
+      "size": 16505
+    },
+    {
       "source": "./images/people_3.png",
       "type": "IMAGE",
       "size": 5556
+    },
+    {
+      "source": "./images/people_4.gif",
+      "type": "IMAGE",
+      "size": 15900
     },
     {
       "source": "./images/people_4.png",
@@ -551,9 +571,19 @@
       "size": 4534
     },
     {
+      "source": "./images/people_5.gif",
+      "type": "IMAGE",
+      "size": 9701
+    },
+    {
       "source": "./images/people_5.png",
       "type": "IMAGE",
       "size": 3208
+    },
+    {
+      "source": "./images/people_6.gif",
+      "type": "IMAGE",
+      "size": 22834
     },
     {
       "source": "./images/people_6.png",
@@ -564,6 +594,11 @@
       "source": "./images/people_7.png",
       "type": "IMAGE",
       "size": 2942
+    },
+    {
+      "source": "./images/people_8.gif",
+      "type": "IMAGE",
+      "size": 15900
     },
     {
       "source": "./images/people_8.png",
