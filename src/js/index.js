@@ -8,7 +8,9 @@ $(function(){
   const _map = $('.map');
   const _city = $('.city');
   let tl_car;
+  let tl_car2;
   let tl_bus;
+  let tl_bus2;
   let tl_talk;
 
   $.html5Loader({
@@ -173,7 +175,7 @@ $(function(){
     if(isFirstTime){
       isFirstTime = false;
 
-      playCloudAnimate();
+      // playCloudAnimate();
       playCityAnimate();
       playBikeAnimate();
     }
@@ -225,12 +227,17 @@ $(function(){
       if(step2 < 0){
         alert('請選擇愛車顏色！');
       } else {
-        TweenMax.to($('.select-bike .select-container'), 0.5, {scale: 0.5, autoAlpha: 0, ease: Back.easeIn});
-        TweenMax.to($('.select-bike'), 0.3, {autoAlpha: 0, delay: 0.3});
-
-        tl_talk.seek('start').pause();
+        $('.select-bike .step-2').css('display', 'none');
+        $('.select-bike .step-3').css('display', 'flex');
       }
+    });
 
+    $('.select-bike .step-3 a').on('click', function(e){
+      e.preventDefault();
+
+      TweenMax.to($('.select-bike .select-container'), 0.5, {scale: 0.5, autoAlpha: 0, ease: Back.easeIn});
+      TweenMax.to($('.select-bike'), 0.3, {autoAlpha: 0, delay: 0.3});
+      tl_talk.seek('start').pause();
       changeBikeColor();
     });
 
@@ -245,7 +252,6 @@ $(function(){
     tl_talk.to($('.man-talk .man-2'), 0.3, {alpha: 0, y: 10, ease: Back.easeIn, delay: 2});
     tl_talk.to($('.man-talk .talk-2'), 0.3, {alpha: 0, x: 10, ease: Back.easeOut, delay: -0.3});
     tl_talk.addCallback(function(){
-      // 播放汽車動畫
       tl_talk.seek('start').play();
     });
   }
@@ -255,6 +261,7 @@ $(function(){
     $('.select-bike .step-2 li').removeClass('active');
     $('.select-bike .step-1').css('display', 'flex');
     $('.select-bike .step-2').css('display', 'none');
+    $('.select-bike .step-3').css('display', 'none');
     $('.select-bike .step-2 ul').css('display', 'none');
 
     TweenMax.set($('.select-bike .select-container'),  {scale: 0.5, autoAlpha: 0});
@@ -274,8 +281,9 @@ $(function(){
       closePopup();
     });
 
-    $('.popup-good-home .btn-close').on('click', function(){
+    $('.popup').on('click', function(){
       closePopupGoodHome();
+      closePopup();
     });
   }
 
@@ -313,7 +321,7 @@ $(function(){
     TweenMax.to($('.popup-good-home .man-5'), 0.3, {autoAlpha: 0, scale: 0.5, ease: Back.easeOut});
     TweenMax.to($('.popup-good-home .man-talk'), 0.3, {autoAlpha: 0, scale: 0.5, y: 20, ease: Back.easeOut});
     TweenMax.to($('.popup-good-home .btn-close'), 0.3, {autoAlpha: 0, scale: 0.5, ease: Back.easeOut, onComplete: function(){
-      $('.popup').toggleClass('open');
+      $('.popup').removeClass('open');
     }});
   }
 
@@ -333,23 +341,37 @@ $(function(){
   // 設置汽車動畫
   function initCarAnimate(){
     TweenMax.set($('.car-r'), {alpha: 0});
+    TweenMax.set($('.car2-r'), {alpha: 0});
+    TweenMax.set($('.car2-t'), {alpha: 0});
 
     let addSpeed = 0.8;
     tl_car = new TimelineMax({paused: true});
+    tl_car2 = new TimelineMax({paused: true});
     
     tl_car.addLabel('start');
     tl_car.to($('.car-l'), 10 * addSpeed, {left: '52.6%', top: '36%', ease: Linear.easeNone});
     tl_car.to($('.car-l'), 0, {alpha: 0});
     tl_car.to($('.car-r'), 0, {alpha: 1});
     tl_car.to($('.car-r'), 10 * addSpeed, {left: '79.8%', top: '1.6%', ease: Linear.easeNone});
+
+    tl_car2.addLabel('start');
+    tl_car2.to($('.car2-l'), 4 * addSpeed, {left: '54.6%', top: '71%', ease: Linear.easeNone});
+    tl_car2.to($('.car2-l'), 0, {alpha: 0});
+    tl_car2.to($('.car2-r'), 0, {alpha: 1});
+    tl_car2.to($('.car2-r'), 5 * addSpeed, {left: '67.1%', top: '56%', ease: Linear.easeNone});
+    tl_car2.to($('.car2-r'), 0, {alpha: 0});
+    tl_car2.to($('.car2-t'), 0, {alpha: 1});
+    tl_car2.to($('.car2-t'), 4 * addSpeed, {left: '78.8%', top: '68.6%', ease: Linear.easeNone});
   }
 
   // 設置巴士動畫
   function initBusAnimate(){
     TweenMax.set($('.bus-t'), {alpha: 0});
+    TweenMax.set($('.bus2-t'), {alpha: 0});
 
     let addSpeed = 1.2;
     tl_bus = new TimelineMax({paused: true});
+    tl_bus2 = new TimelineMax({paused: true});
 
     tl_bus.addLabel('start');
     tl_bus.to($('.bus-r'), 6 * addSpeed, {left: '27%', top: '39.6%', ease: Linear.easeNone});
@@ -359,7 +381,13 @@ $(function(){
       $('.building-community').css('zIndex', 54);
       $('.farm-house-2').css('zIndex', 56);
     });
-    tl_bus.to($('.bus-t'), 16 * addSpeed, {left: '78.4%', top: '100%', ease: Linear.easeNone});
+    tl_bus.to($('.bus-t'), 13.5 * addSpeed, {left: '78.4%', top: '100%', ease: Linear.easeNone});
+
+    tl_bus2.addLabel('start');
+    tl_bus2.to($('.bus2-r'), 5 * addSpeed, {left: '28.8%', top: '55%', ease: Linear.easeNone});
+    tl_bus2.to($('.bus2-r'), 0, {alpha: 0});
+    tl_bus2.to($('.bus2-t'), 0, {alpha: 1});
+    tl_bus2.to($('.bus2-t'), 6 * addSpeed, {left: '59%', top: '90.5%', ease: Linear.easeNone});
   }
 
   // 播放機車動畫
@@ -373,10 +401,11 @@ $(function(){
     tl.addLabel('restart');
     tl.addCallback(function(){
       $('.building-community').css('zIndex', 70);
+      tl_car2.seek('start').play();
+      tl_bus2.seek('start').play();
     });
     tl.to($('.bike-road-2'), 0, {alpha: 1});
     tl.to($('.bike-road-2'), 7 * addSpeed, {left: '61.2%', top: '46.6%', ease: Linear.easeNone});
-    
     tl.to($('.bike-road-2'), 0, {alpha: 0});
     tl.to($('.bike-road-3'), 0, {alpha: 1});
     tl.addCallback(function(){
@@ -400,6 +429,10 @@ $(function(){
     tl.to($('.bike-road-6'), 0, {alpha: 0});
     tl.to($('.bike-road-7'), 0, {alpha: 1});
     tl.to($('.bike-road-7'), 1 * addSpeed, {left: '50.2%', top: '31%', ease: Linear.easeNone});
+    tl.addCallback(function(){
+      // 播放汽車動畫2
+      // tl_car2.seek('start').play();
+    });
     tl.to($('.bike-road-7'), 0, {alpha: 0});
     tl.to($('.bike-road-8'), 0, {alpha: 1});
     tl.addCallback(function(){
@@ -408,6 +441,7 @@ $(function(){
     tl.to($('.bike-road-8'), 7 * addSpeed, {left: '30.5%', top: '53.5%', ease: Linear.easeNone});
     tl.to($('.bike-road-8'), 0, {alpha: 0});
     tl.to($('.bike-road-9'), 0, {alpha: 1});
+   
     tl.to($('.bike-road-9'), 5 * addSpeed, {left: '42.8%', top: '69.6%', ease: Linear.easeNone});
     tl.to($('.bike-road-9'), 0, {alpha: 0});
     tl.addCallback(function(){

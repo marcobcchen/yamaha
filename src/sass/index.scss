@@ -45,9 +45,10 @@ header{
 
   .logo{
     display: block;
-    width: 20%;
+    width: 18%;
     max-width: 130px;
     margin-left: 10px;
+    margin-top: 2px;
 
     @media (min-width: $media_sm) {
       width: 12%;
@@ -322,7 +323,7 @@ header{
         background-size: auto 100%;
 
         @media (min-width: $media_lg) {
-          height: 130%;
+          height: 152%;
         }
 
         .ratio-container{
@@ -509,7 +510,8 @@ header{
           left: 29%;
           top: 58%;
           width: 8%;
-          z-index: 72;
+          z-index: 92;
+          // z-index: 72;
         }
 
         .farm-house-5{
@@ -841,6 +843,36 @@ header{
           z-index: 25;
         }
 
+        .car2-l{
+          position: absolute;
+          left: 64%;
+          top: 83%;
+          // left: 54.6%;
+          // top: 71%;
+          width: 2%;
+          z-index: 80;
+        }
+
+        .car2-r{
+          position: absolute;
+          left: 54.6%;
+          top: 71%;
+          // left: 67.1%;
+          // top: 56%;
+          width: 2%;
+          z-index: 75;
+        }
+
+        .car2-t{
+          position: absolute;
+          left: 68.1%;
+          top: 55%;
+          // left: 78.8%;
+          // top: 68.6%;
+          width: 2%;
+          z-index: 50;
+        }
+
         .bus-r{
           position: absolute;
           left: 10%;
@@ -861,6 +893,26 @@ header{
           z-index: 55;
         }
 
+        .bus2-r{
+          position: absolute;
+          left: 9.2%;
+          top: 78.8%;
+          // left: 28.8%;
+          // top: 55%;
+          width: 3.6%;
+          z-index: 53;
+        }
+
+        .bus2-t{
+          position: absolute;
+          left: 31%;
+          top: 55.5%;
+          // left: 59%;
+          // top: 90.5%;
+          width: 3.6%;
+          z-index: 82;
+        }
+
         .people{
           visibility: hidden;
           opacity: 0;
@@ -870,7 +922,7 @@ header{
           position: absolute;
           left: 33%;
           top: 40.5%;
-          width: 1.2%;
+          width: 1.4%;
           z-index: 60;
           // animation: peopleRightTop 1s 4s infinite alternate;
         }
@@ -879,7 +931,7 @@ header{
           position: absolute;
           left: 39.4%;
           top: 41.5%;
-          width: 0.6%;
+          width: 0.8%;
           z-index: 20;
           // animation: peopleLeft 1s 4s infinite alternate;
         }
@@ -888,7 +940,7 @@ header{
           position: absolute;
           left: 52.4%;
           top: 24%;
-          width: 1%;
+          width: 1.2%;
           z-index: 60;
           // animation: peopleRightBottom 1s 4s infinite alternate;
         }
@@ -897,7 +949,7 @@ header{
           position: absolute;
           left: 58.4%;
           top: 39.5%;
-          width: 0.8%;
+          width: 1%;
           z-index: 20;
           // animation: peopleLeftBottom 1s 4s infinite alternate;
         }
@@ -905,8 +957,8 @@ header{
         .people-5{
           position: absolute;
           left: 62.4%;
-          top: 42%;
-          width: 0.6%;
+          top: 41.5%;
+          width: 0.7%;
           z-index: 60;
           // animation: peopleLeftTop 1s 4s infinite alternate;
         }
@@ -915,34 +967,52 @@ header{
           position: absolute;
           left: 54.4%;
           top: 50%;
-          width: 1.25%;
+          width: 1%;
           z-index: 60;
           // animation: peopleRightTop 1s 4s infinite alternate;
         }
 
         .people-7{
           position: absolute;
-          left: 50.2%;
+          left: 49.5%;
           top: 51.4%;
-          width: 0.6%;
+          width: 1.2%;
           z-index: 60;
           // animation: peopleTop 1s 4s infinite alternate;
         }
 
         .people-8{
           position: absolute;
-          left: 49.2%;
-          top: 43.4%;
-          width: 0.8%;
+          left: 46.2%;
+          top: 41.4%;
+          width: 1%;
           z-index: 60;
+          // animation: peopleLeftBottom 1s 4s infinite alternate;
+        }
+
+        .people-9{
+          position: absolute;
+          left: 40.2%;
+          top: 63.8%;
+          width: 0.7%;
+          z-index: 70;
+          // animation: peopleLeftBottom 1s 4s infinite alternate;
+        }
+
+        .people-10{
+          position: absolute;
+          left: 59.6%;
+          top: 56%;
+          width: 0.7%;
+          z-index: 70;
           // animation: peopleLeftBottom 1s 4s infinite alternate;
         }
 
         .flag-main{
           display: block;
           position: absolute;
-          left: 46.2%;
-          top: 31%;
+          left: 47.2%;
+          top: 31.5%;
           width: 4%;
           z-index: 90;
           cursor: pointer;
@@ -977,10 +1047,11 @@ header{
           position: absolute;
           left: 50%;
           top: 50%;
-          width: 1.4%;
+          width: 3.8%;
           z-index: 90;
           cursor: pointer;
           animation: upDown 1s 4s infinite alternate;
+          // background: rgba(255, 105, 180, 0.5);
           
           // &::before{
           //   content: '';
@@ -999,11 +1070,11 @@ header{
           &::after{
             content: '';
             display: block;
-            width: 140%;
-            padding-bottom: 262.55%;
+            width: 100%;
+            padding-bottom: 130%;
             background: url(../images/flag.png) no-repeat center top;
             // background-color: hotpink;
-            background-size: 70% auto;
+            background-size: 38% auto;
           }
 
           &:hover{
@@ -1014,28 +1085,28 @@ header{
         }
 
         .flag-1{
-          left: 37.4%;
+          left: 36.4%;
           top: 30%;
         }
 
         .flag-2{
-          left: 44.4%;
+          left: 43%;
           top: 26%;
         }
 
         .flag-3{
-          left: 53.4%;
-          top: 24%;
+          left: 52.4%;
+          top: 21.5%;
         }
 
         .flag-4{
-          left: 63.4%;
-          top: 32%;
+          left: 62.4%;
+          top: 31%;
         }
 
         .flag-5{
-          left: 61.8%;
-          top: 48%; 
+          left: 60.8%;
+          top: 47%; 
         }
 
         .flag-6{
@@ -1167,21 +1238,21 @@ header{
             &.school{
               @media (min-width: $media_lg) {
                 left: 48%;
-                top: 36%;
+                top: 40%;
               }
             }
 
             &.mall{
               @media (min-width: $media_lg) {
                 left: 53%;
-                top: 54%;
+                top: 52%;
               }
             }
 
             &.stadium{
               @media (min-width: $media_lg) {
                 left: 64%;
-                top: 34%;
+                top: 36%;
               }
             }
 
@@ -1229,10 +1300,10 @@ header{
   position: absolute;
   left: 0%;
   top: 20%;
-  width: 18%;
+  width: 14%;
 
   @media (min-width: $media_lg) {
-    width: 12%;
+    width: 8%;
   }
 }
 
@@ -1240,10 +1311,10 @@ header{
   position: absolute;
   left: 88%;
   top: 62%;
-  width: 18%;
+  width: 14%;
 
   @media (min-width: $media_lg) {
-    width: 12%;
+    width: 8%;
   }
 }
 
@@ -1251,10 +1322,10 @@ header{
   position: absolute;
   left: 80%;
   top: 22%;
-  width: 18%;
+  width: 14%;
 
   @media (min-width: $media_lg) {
-    width: 12%;
+    width: 8%;
   }
 }
 
@@ -1262,10 +1333,10 @@ header{
   position: absolute;
   left: 8%;
   top: 24%;
-  width: 12%;
+  width: 10%;
 
   @media (min-width: $media_lg) {
-    width: 8%;
+    width: 6%;
   }
 }
 
@@ -1273,10 +1344,10 @@ header{
   position: absolute;
   left: 90%;
   top: 70%;
-  width: 12%;
+  width: 10%;
 
   @media (min-width: $media_lg) {
-    width: 8%;
+    width: 6%;
   }
 }
 
@@ -1284,10 +1355,10 @@ header{
   position: absolute;
   left: 32%;
   top: 80%;
-  width: 12%;
+  width: 10%;
 
   @media (min-width: $media_lg) {
-    width: 8%;
+    width: 6%;
   }
 }
 
@@ -1421,6 +1492,13 @@ header{
     & .step-2 > ul{
       display: none;
     }
+
+    & .step-3 > p{
+      text-align: center;
+      min-width: 600px;
+      margin-bottom: 2rem;
+    }
+
   }
 }
 

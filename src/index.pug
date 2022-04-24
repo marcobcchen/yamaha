@@ -40,31 +40,31 @@ html(lang="zh-tw")
               img(src="images/nav_icon_2.png", alt="")
             .text 
               .text-sub Cinema
-              .text-main 本篇影片
+              .text-main 我的家庭好加在
           a(href="#", data-popup="good_home", onclick="trackEvent('menu', '郝家');")
             .pic 
               img(src="images/nav_icon_3.png", alt="")
             .text 
               .text-sub 郝家
-              .text-main 郝家在人物簡介
+              .text-main 郝家人物簡介
           a(href="#", data-popup="stadium", onclick="trackEvent('menu', '足球場');")
             .pic 
               img(src="images/nav_icon_4.png", alt="")
             .text 
               .text-sub Football field
-              .text-main 全家一起出去玩！
+              .text-main 全家出去玩
           a(href="#", data-popup="mall", onclick="trackEvent('menu', '購物中心');")
             .pic 
               img(src="images/nav_icon_5.png", alt="")
             .text 
               .text-sub Mall
-              .text-main 血拚囉！
+              .text-main 去血拼吧
           a(href="#", data-popup="school", onclick="trackEvent('menu', '學校');")
             .pic 
               img(src="images/nav_icon_6.png", alt="")
             .text 
               .text-sub School
-              .text-main 開開心心上學去！
+              .text-main 開心上學去
         a.btn-change-color(href="#", onclick="trackEvent('menu', '車款車色選擇');")
           .pic 
             img(src="images/bike_0_0_t.png", alt="")
@@ -195,14 +195,29 @@ html(lang="zh-tw")
               //- 汽車1
               .car-l
                 img(src="images/car_l.png", alt="汽車")
-              //- 汽車2
+              //- 汽車1
               .car-r
                 img(src="images/car_r.png", alt="汽車")
+              //- 汽車2
+              .car2-l
+                img(src="images/car2_l.png", alt="汽車")
+              //- 汽車2
+              .car2-r
+                img(src="images/car2_r.png", alt="汽車")
+              //- 汽車2
+              .car2-t
+                img(src="images/car2_t.png", alt="汽車")
               //- 巴士1
               .bus-r
                 img(src="images/bus_r.png", alt="巴士")
-              //- 巴士2
+              //- 巴士1
               .bus-t
+                img(src="images/bus_t.png", alt="巴士")
+              //- 巴士2
+              .bus2-r
+                img(src="images/bus_r.png", alt="巴士")
+              //- 巴士2
+              .bus2-t
                 img(src="images/bus_t.png", alt="巴士")
               //- 屋子1
               .building-house-1 
@@ -215,11 +230,11 @@ html(lang="zh-tw")
                 img(src="images/building_center.png", alt="中心建築")
                 .building-center-land 
                   img(src="images/building_center_land.png", alt="")
-                .building-center-balloon-1 
+                a.building-center-balloon-1(href="campaign/", id="campaign", onclick="trackEvent('button', '母親節活動');")  
                   img(src="images/building_center_balloon.png", alt="")
-                .building-center-house
+                a.building-center-house(href="campaign/", id="campaign", onclick="trackEvent('button', '母親節活動');") 
                   img(src="images/building_center_house.png", alt="")
-                .building-center-balloon-2 
+                a.building-center-balloon-2(href="campaign/", id="campaign", onclick="trackEvent('button', '母親節活動');") 
                   img(src="images/building_center_balloon.png", alt="")
                 .building-center-board
                   img(src="images/building_center_board.png", alt="")
@@ -279,10 +294,16 @@ html(lang="zh-tw")
                 img(src="images/people_6.gif", alt="人")
               //- 人7
               .people.people-7
-                img(src="images/people_7.png", alt="人")
+                img(src="images/people_7.gif", alt="人")
               //- 人8
               .people.people-8
                 img(src="images/people_8.gif", alt="人")
+              //- 人9
+              .people.people-9
+                img(src="images/people_9.png", alt="人")
+              //- 人10
+              .people.people-10
+                img(src="images/people_10.png", alt="人")
 
               //- 旗標
               a.flag.flag-1(href="#", data-popup="school", id="school", onclick="trackEvent('button', '學校');")
@@ -333,7 +354,7 @@ html(lang="zh-tw")
                         img(src="images/man_head_5.png", alt="")
                     .man-talk 
                       img(src="images/man_talk.png", alt="")
-                    .btn-close 
+                    //- .btn-close 
                       img(src="images/icon_close.png", alt="")
                 .popup-basic
                   .pic.pic-0-school 
@@ -354,20 +375,13 @@ html(lang="zh-tw")
                   .pic.pic-1-stadium 
                     img(src="images/title_1_stadium.png", alt="")
                     img(src="images/pop_1_stadium.jpg", alt="") 
-                  p.des.des-0-school 送完郝嘉在去上學後，媽媽自言自語到：「希望郝嘉在長大後也能腳踏實地做人，和這台車一樣！」 
-                  p.des.des-0-mall 阿公拿著裝滿滿的購物袋從賣場走出來一邊和阿嬤說到：「好加在JOG的置腳空間很夠，這樣就可以輕鬆放啦！」
-                  p.des.des-0-stadium 媽媽輕輕鬆鬆立起中柱，帥氣停車，心中竊喜：
-                    |
-                    br
-                    | 「吼～這台車怎麼這麼輕啦，太好立了吧，我真帥！」  
-                  p.des.des-1-school 送兒子到學校後，爸爸輕拍機車座椅說到：「好加在是加大坐墊，坐起來真的舒服！」
-                  p.des.des-1-mall 置物箱裡裝著滿滿的東西，吃的喝的還有背包…
-                    |
-                    br
-                    | 爸爸碎念：「都要沒地方裝了…好加在這台車夠大。」
-                  p.des.des-1-stadium 當爸爸要抵達時，爸爸載著郝嘉在緩緩煞停「好加在有UBS岔車系統，好穩！」
+                  p.des.des-0-school 媽媽載兒子抵達學校，雙腳輕鬆踏地，媽媽說：「好加在JOG車身低，讓我和家人都安心！」
+                  p.des.des-0-mall 阿公拿著裝滿滿的野餐物品放到置腳空間，和阿嬤說：「好加在JOG置腳空間很夠，載東西輕輕鬆鬆！」
+                  p.des.des-0-stadium 媽媽和阿嬤抵達足球場後，媽媽輕鬆立起中柱，帥氣停車，心中竊喜：「吼～JOG怎麼這麼輕，太好駐車了吧！」
+                  p.des.des-1-school 爸爸載兒子抵達學校後，輕拍坐椅說：「好加在勁豪有加長坐墊，坐起來超舒適！」
+                  p.des.des-1-mall 爸爸準備載兒子去參加足球比賽，出發前，置物箱裡裝著滿滿的運動用品，有水瓶、足球、毛巾….，爸爸碎念：「好加在勁豪置物箱夠大！」
+                  p.des.des-1-stadium 爸爸載著兒子快抵達足球場時，有顆足球滾到馬路上，爸爸緩慢煞停，鬆一口氣：「好加在勁豪有UBS連動煞車系統，好安心！」
                   .btn-close 關閉
-    
     
     .select-bike
       .select-container 
@@ -408,6 +422,14 @@ html(lang="zh-tw")
             li(id="ginhow-gray", onclick="trackEvent('button', '勁豪-灰色');") 
               img(src="images/select_color_2_3.png", alt="灰色")
           a(href="#") 繼續
+        .select-container-step.step-3
+          p 恭喜您已經選好車囉！
+            |
+            br
+            | 現在只要點擊藍色地標或正中間
+            br
+            | 的霓虹燈就可以盡情探索！
+          a(href="#") GO!
 
     .loading
       .icon
