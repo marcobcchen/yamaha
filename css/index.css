@@ -892,6 +892,13 @@ header nav .btn-change-color .text-icon {
   width: 3.6%;
   z-index: 82;
 }
+.main .map .city .scale-container .bus2-b {
+  position: absolute;
+  left: 50.8%;
+  top: 83.4%;
+  width: 3.6%;
+  z-index: 82;
+}
 .main .map .city .scale-container .people {
   visibility: hidden;
   opacity: 0;
@@ -1433,10 +1440,14 @@ header nav .btn-change-color .text-icon {
 .select-bike .select-container .step-2 > ul {
   display: none;
 }
-.select-bike .select-container .step-3 > p {
+.select-bike .select-container .step-3 .step-con {
   text-align: center;
-  min-width: 600px;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
+}
+@media (min-width: 992px) {
+  .select-bike .select-container .step-3 .step-con {
+    min-width: 600px;
+  }
 }
 
 .loading {

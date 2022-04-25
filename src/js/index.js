@@ -175,7 +175,7 @@ $(function(){
     if(isFirstTime){
       isFirstTime = false;
 
-      // playCloudAnimate();
+      playCloudAnimate();
       playCityAnimate();
       playBikeAnimate();
     }
@@ -341,6 +341,7 @@ $(function(){
   // 設置汽車動畫
   function initCarAnimate(){
     TweenMax.set($('.car-r'), {alpha: 0});
+    TweenMax.set($('.car2-l'), {alpha: 0});
     TweenMax.set($('.car2-r'), {alpha: 0});
     TweenMax.set($('.car2-t'), {alpha: 0});
 
@@ -355,6 +356,7 @@ $(function(){
     tl_car.to($('.car-r'), 10 * addSpeed, {left: '79.8%', top: '1.6%', ease: Linear.easeNone});
 
     tl_car2.addLabel('start');
+    tl_car2.to($('.car2-l'), 0, {alpha: 1});
     tl_car2.to($('.car2-l'), 4 * addSpeed, {left: '54.6%', top: '71%', ease: Linear.easeNone});
     tl_car2.to($('.car2-l'), 0, {alpha: 0});
     tl_car2.to($('.car2-r'), 0, {alpha: 1});
@@ -368,6 +370,7 @@ $(function(){
   function initBusAnimate(){
     TweenMax.set($('.bus-t'), {alpha: 0});
     TweenMax.set($('.bus2-t'), {alpha: 0});
+    TweenMax.set($('.bus2-b'), {alpha: 0});
 
     let addSpeed = 1.2;
     tl_bus = new TimelineMax({paused: true});
@@ -387,7 +390,10 @@ $(function(){
     tl_bus2.to($('.bus2-r'), 5 * addSpeed, {left: '28.8%', top: '55%', ease: Linear.easeNone});
     tl_bus2.to($('.bus2-r'), 0, {alpha: 0});
     tl_bus2.to($('.bus2-t'), 0, {alpha: 1});
-    tl_bus2.to($('.bus2-t'), 6 * addSpeed, {left: '59%', top: '90.5%', ease: Linear.easeNone});
+    tl_bus2.to($('.bus2-t'), 6 * addSpeed, {left: '51%', top: '80.5%', ease: Linear.easeNone});
+    tl_bus2.to($('.bus2-t'), 0, {alpha: 0});
+    tl_bus2.to($('.bus2-b'), 0, {alpha: 1});
+    tl_bus2.to($('.bus2-b'), 6 * addSpeed, {left: '36.8%', top: '101.4%', ease: Linear.easeNone});
   }
 
   // 播放機車動畫

@@ -907,8 +907,18 @@ header{
           position: absolute;
           left: 31%;
           top: 55.5%;
-          // left: 59%;
-          // top: 90.5%;
+          // left: 51%;
+          // top: 80.5%;
+          width: 3.6%;
+          z-index: 82;
+        }
+
+        .bus2-b{
+          position: absolute;
+          left: 50.8%;
+          top: 83.4%;
+          // left: 36.8%;
+          // top: 101.4%;
           width: 3.6%;
           z-index: 82;
         }
@@ -1493,12 +1503,16 @@ header{
       display: none;
     }
 
-    & .step-3 > p{
-      text-align: center;
-      min-width: 600px;
-      margin-bottom: 2rem;
-    }
+    & .step-3 {
+      .step-con{
+        text-align: center;
+        margin-bottom: 1.5rem;
 
+        @media (min-width: $media_lg) {
+          min-width: 600px;
+        }
+      }
+    }
   }
 }
 

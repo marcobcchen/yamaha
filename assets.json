@@ -236,6 +236,26 @@
       "size": 21861
     },
     {
+      "source": "./images/car2_b.png",
+      "type": "IMAGE",
+      "size": 13264
+    },
+    {
+      "source": "./images/car2_l.png",
+      "type": "IMAGE",
+      "size": 12922
+    },
+    {
+      "source": "./images/car2_r.png",
+      "type": "IMAGE",
+      "size": 12788
+    },
+    {
+      "source": "./images/car2_t.png",
+      "type": "IMAGE",
+      "size": 13692
+    },
+    {
       "source": "./images/car_b.png",
       "type": "IMAGE",
       "size": 11138
@@ -541,9 +561,14 @@
       "size": 5074
     },
     {
+      "source": "./images/people_10.png",
+      "type": "IMAGE",
+      "size": 5500
+    },
+    {
       "source": "./images/people_2.gif",
       "type": "IMAGE",
-      "size": 4642
+      "size": 4557
     },
     {
       "source": "./images/people_2.png",
@@ -583,12 +608,17 @@
     {
       "source": "./images/people_6.gif",
       "type": "IMAGE",
-      "size": 22834
+      "size": 9387
     },
     {
       "source": "./images/people_6.png",
       "type": "IMAGE",
       "size": 4846
+    },
+    {
+      "source": "./images/people_7.gif",
+      "type": "IMAGE",
+      "size": 5444
     },
     {
       "source": "./images/people_7.png",
@@ -598,12 +628,17 @@
     {
       "source": "./images/people_8.gif",
       "type": "IMAGE",
-      "size": 15900
+      "size": 23292
     },
     {
       "source": "./images/people_8.png",
       "type": "IMAGE",
       "size": 4534
+    },
+    {
+      "source": "./images/people_9.png",
+      "type": "IMAGE",
+      "size": 5892
     },
     {
       "source": "./images/pic.png",
@@ -653,42 +688,42 @@
     {
       "source": "./images/select_bike_1.png",
       "type": "IMAGE",
-      "size": 48146
+      "size": 142091
     },
     {
       "source": "./images/select_bike_2.png",
       "type": "IMAGE",
-      "size": 63955
+      "size": 183060
     },
     {
       "source": "./images/select_color_1_1.png",
       "type": "IMAGE",
-      "size": 36145
+      "size": 102933
     },
     {
       "source": "./images/select_color_1_2.png",
       "type": "IMAGE",
-      "size": 37770
+      "size": 110268
     },
     {
       "source": "./images/select_color_1_3.png",
       "type": "IMAGE",
-      "size": 36780
+      "size": 107217
     },
     {
       "source": "./images/select_color_2_1.png",
       "type": "IMAGE",
-      "size": 42601
+      "size": 115662
     },
     {
       "source": "./images/select_color_2_2.png",
       "type": "IMAGE",
-      "size": 41976
+      "size": 114864
     },
     {
       "source": "./images/select_color_2_3.png",
       "type": "IMAGE",
-      "size": 42171
+      "size": 115845
     },
     {
       "source": "./images/select_man_1.png",
@@ -703,17 +738,17 @@
     {
       "source": "./images/select_talk_1.png",
       "type": "IMAGE",
-      "size": 6705
+      "size": 7936
     },
     {
       "source": "./images/select_talk_2.png",
       "type": "IMAGE",
-      "size": 7950
+      "size": 9381
     },
     {
       "source": "./images/select_title.png",
       "type": "IMAGE",
-      "size": 15660
+      "size": 9375
     },
     {
       "source": "./images/share.jpg",
@@ -723,32 +758,32 @@
     {
       "source": "./images/title_0_mall.png",
       "type": "IMAGE",
-      "size": 87511
+      "size": 90598
     },
     {
       "source": "./images/title_0_school.png",
       "type": "IMAGE",
-      "size": 88588
+      "size": 90039
     },
     {
       "source": "./images/title_0_stadium.png",
       "type": "IMAGE",
-      "size": 87907
+      "size": 89648
     },
     {
       "source": "./images/title_1_mall.png",
       "type": "IMAGE",
-      "size": 106513
+      "size": 106156
     },
     {
       "source": "./images/title_1_school.png",
       "type": "IMAGE",
-      "size": 107195
+      "size": 107234
     },
     {
       "source": "./images/title_1_stadium.png",
       "type": "IMAGE",
-      "size": 106385
+      "size": 107718
     }
   ]
 }
